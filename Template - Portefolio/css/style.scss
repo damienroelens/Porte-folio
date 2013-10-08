@@ -1,0 +1,306 @@
+@import "compass";
+@import "compass/reset";
+
+@font-face {font-family: 'Lane';src: url('webfonts/LANENAR_.ttf') format('truetype');}
+@font-face {
+    font-family: 'League Gothic';
+    src: url('webfonts/leaguegothic-regular-webfont.eot');
+    src: url('webfonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('webfonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('webfonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Socialico';
+    src: url('webfonts/Socialico.ttf') format('truetype'),
+         url('webfonts/Socialico.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$fontStackTitle: Lane ,Open sans, Open sans ms,'sans-serif';
+$fontStackText: Gotham,  Helvetica, Arial, 'sans-serif';
+$fontStackNav: League Gothic, Impact, Helvetica, Arial, 'sans-serif';
+
+body{
+	font-family: $fontStackText;
+}
+
+header{
+	background-color: #111;
+}
+div.contain{
+	width:1200px;
+	margin: auto;
+	position:relative;
+}
+
+h1{
+	font: 50px/1.5 $fontStackTitle;
+	padding:15px 0px;
+	line-height: 70px;
+	background-image:url(../img/logoc.png);
+	background-repeat: no-repeat;
+	background-position: 0px 20px;
+	padding-left:120px;
+}
+
+h1+p{
+	font:18px/1.5 $fontStackText normal;
+	color:#eee;
+	padding:40px;
+	padding-right:0;
+	text-align:right;
+	position:absolute;
+	top:0;
+	right:0px;
+	&>em{
+		color:#39AD39;
+	}
+}
+
+h3{
+	padding:20px 20px 20px 0px;
+	font:22px/1.5 $fontStackText normal;
+}
+
+a{
+	text-decoration: none;
+	color:#39AD39;
+}
+
+nav{
+	background-color: #484548;
+	font: 30px/1.5 $fontStackNav normal;
+
+	&>ul{
+		@include horizontal-list();
+		padding:0;
+		width: 1200px;
+		margin: auto;
+		text-align: center;
+	}
+	&>h2{
+		width:0;
+		height: 0;
+		white-space: nowrap;
+		overflow: hidden;
+		text-indent:9999px;
+	}
+	& li{
+		border-right:1px solid #39AD39;
+		padding:0;
+		margin:8px 0;
+		&>a{
+			width:290px;
+			display:block;
+			color:#51CF51;
+			@include transition(compact(all 0.2s linear));
+			-webkit-text-shadow: 0;
+			-moz-text-shadow: 0;
+			-ms-text-shadow: 0;
+			-o-text-shadow: 0;
+			text-shadow: 0;
+			text-transform: uppercase;
+		}
+		&:last-child{
+			border:none;
+			background:#484548 url(../img/cont.png) 50px 5px no-repeat;
+		}
+		&>a:hover{
+			-webkit-text-shadow: 0px 0px 8px #111;
+			 -moz-text-shadow: 0px 0px 8px #111;
+			 -ms-text-shadow: 0px 0px 8px #111;
+			 -o-text-shadow: 0px 0px 8px #111;
+			 text-shadow: 0px 0px 8px #111; 
+			 background-color:#555;
+			 -webkit-border-radius: 5px;
+			  -moz-border-radius: 5px;
+			  border-radius: 5px; 
+		}
+		&:first-child{
+			background:#484548 url(../img/home.png) 50px 3px no-repeat;
+		}
+		&+li{
+			background:#484548 url(../img/work.png) 50px 3px no-repeat;
+		}
+		&+li+li{
+			background:#484548 url(../img/me.png) 50px 3px no-repeat;
+		}
+
+	}
+}
+
+section{
+
+	margin-bottom: 50px;
+
+	& h3{
+		border-bottom:1px solid #39AD39;
+		width:400px;
+		margin:20px 0px 30px;
+		text-transform: uppercase;
+	}
+	& h4{
+		padding:20px 20px 20px 0px;
+		border-bottom:1px solid #39AD39;
+		width:80%;
+		margin:20px 0px 30px;
+	}
+}
+section#work{
+
+	width:1200px;
+	margin:auto;
+	padding-top: 50px;
+	margin-bottom: 50px;
+
+	& div.contain{
+		width: 63%;
+		display: inline-block;
+		vertical-align: top;
+		border-right:1px solid #39AD39;
+		margin-right:50px;
+	}
+	& aside{
+		width:28%;
+		display: inline-block;
+		margin-left:30px;
+
+		& li{
+			margin:10px 0px;
+			width:80%;
+		}
+		& a{
+			padding:10px 10px;
+			display: block;
+		}
+		& a:hover{
+			background-color: rgba(50,50,50,0.5);
+			-webkit-border-radius: 5px;
+			  -moz-border-radius: 5px;
+			  border-radius: 5px; 
+			  -webkit-text-shadow: 0px 0px 2px #111;
+			 -moz-text-shadow: 0px 0px 2px #111;
+			 -ms-text-shadow: 0px 0px 2px #111;
+			 -o-text-shadow: 0px 0px 2px #111;
+			 text-shadow: 0px 0px 2px #111; 
+		}
+	}
+
+	& figure{
+		display:inline-block;
+		margin-right:20px;
+		position:relative;
+
+		& figcaption{
+			color:darken(#39AD39,10%);
+			position:absolute;
+			bottom:2px;
+			width:180px;
+			padding:10px;
+			background-color: #111;
+		}
+	}
+
+	& img{
+		width:200px;
+		height: 200px;
+	}
+}
+
+
+section#present{
+
+	& img{
+		display:block;
+		float:right;
+		padding:5px;
+		border-radius: 5px;
+		margin:20px 0px 20px 20px;
+	}
+	& p{
+		width:40%;
+		display: inline-block;
+		vertical-align: top;
+		margin-right:20px;
+		line-height: 1.5;
+	}
+}
+
+ .f-nav{ 
+ 	z-index: 9999; position: fixed; left: 0; top: 0; width: 100%;
+ }
+
+ .cont-up{
+ 	margin-top: 81px;
+ }
+
+ footer{
+
+	background-color: #484548;
+	text-align: center;
+
+	& a:hover{
+			-webkit-text-shadow: 0px 0px 8px #111;
+			 -moz-text-shadow: 0px 0px 8px #111;
+			 -ms-text-shadow: 0px 0px 8px #111;
+			 -o-text-shadow: 0px 0px 8px #111;
+			 text-shadow: 0px 0px 8px #111; 
+			 -webkit-border-radius: 5px;
+			  -moz-border-radius: 5px;
+			  border-radius: 5px; 
+		}
+
+	&>div.contain>div{
+		width:530px;
+		display:inline-block;
+		padding:10px;
+
+	}
+	
+	& .menu{
+		font: 30px/1.5 $fontStackNav normal;
+		text-transform: uppercase;
+		height:60px;
+		@include horizontal-list();
+		& li{
+			width:100px;
+			& a{
+				color:darken(#39AD39,10%);
+			}
+		}
+	}
+
+
+	& .socio{
+		font:70px/1.5 'Socialico' normal;
+		& li{
+				min-width:80px;
+		}
+
+		& a{
+			color:darken(#EEE,20%);
+			text-transform: uppercase;
+			@include transition(compact(all 0.4s linear));
+
+			&:hover{
+				text-transform: lowercase;
+				color:darken(#39AD39,10%);
+			}
+		}	
+
+		& ul{
+			@include horizontal-list();
+			
+		}
+	}
+	& p{
+		color:darken(#EEE,20%);
+		padding-bottom: 20px;
+	}
+
+ }
