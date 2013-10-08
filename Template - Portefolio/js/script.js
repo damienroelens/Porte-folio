@@ -1,9 +1,33 @@
 ( function($) {
 	"use strict";
 
-	jQuery("document").ready(function($){
-	    
-	    var nav = $('.nav-container');
+	var iTrombiDelay = 8000,
+		$trombiPhotos;
+/*	
+	var $phtos = $('#wrapper img').css({
+			width : 100,
+			height : 100,
+	});
+
+	var $figu = $('#wrapper figure').css({
+			display : block
+	});
+*/
+	var trombinext = function () {
+		var $current, $next;
+		( $current = $trombiPhotos.filter(":visible") ).delay(iTrombiDelay).fadeOut( function(){
+			(($next = $current.next()).size() ? $next : $trombiPhotos.first()).fadeIn(trombinext);
+		});
+	};
+
+	$( function(){
+		
+		( $trombiPhotos = $("#wrapper figure")).not(":first").hide();
+		trombinext();
+		
+	});
+
+	var nav = $('.nav-container');
 	    var cont = $('#wrapper');
 	    
 	    $(window).scroll(function () {
@@ -15,26 +39,5 @@
 	            cont.removeClass("cont-up");
 	        }
 	    });
-	 
-	});
-
-	var iTrombiDelay = 8000,
-		$trombiPhotos;
-		
-	var trombinext = function () {
-		var $current, $next;
-		( $current = $trombiPhotos.filter(":visible") ).delay(iTrombiDelay).fadeOut( function(){
-			(($next = $current.next()).size() ? $next : $trombiPhotos.first()).fadeIn(trombinext);
-		});
-	};
-	
-	var clickFoto
-
-	$( function(){
-		
-		( $trombiPhotos = $("#wrapper figure")).not(":first").hide();
-		trombinext();
-		
-	});
 
 }).call(this,jQuery);

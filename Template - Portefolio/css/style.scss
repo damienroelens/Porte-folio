@@ -1,27 +1,27 @@
 @import "compass";
 @import "compass/reset";
 
-@font-face {font-family: 'Lane';src: url('webfonts/LANENAR_.ttf') format('truetype');}
+@font-face {font-family: 'Lane';src: url('./webfonts/LANENAR_.ttf') format('truetype');}
 @font-face {
     font-family: 'League Gothic';
-    src: url('webfonts/leaguegothic-regular-webfont.eot');
-    src: url('webfonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('webfonts/leaguegothic-regular-webfont.woff') format('woff'),
-         url('webfonts/leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('webfonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    src: url('./webfonts/leaguegothic-regular-webfont.eot');
+    src: url('./webfonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./webfonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('./webfonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('./webfonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'Socialico';
-    src: url('webfonts/Socialico.ttf') format('truetype'),
-         url('webfonts/Socialico.otf');
+    src: url('./webfonts/Socialico.ttf') format('truetype'),
+         url('./webfonts/Socialico.otf');
     font-weight: normal;
     font-style: normal;
 }
 
-$fontStackTitle: Lane ,Open sans, Open sans ms,'sans-serif';
+$fontStackTitle: Lane ,'sans-serif';
 $fontStackText: Gotham,  Helvetica, Arial, 'sans-serif';
 $fontStackNav: Gotham, Impact, Helvetica, Arial, 'sans-serif';
 $fontStackP: Verdana,Helvetica,Arial,'sans-serif';
@@ -155,7 +155,7 @@ section{
 		text-transform: uppercase;
 	}
 	& h4{
-		padding:20px 0px 30px 0px;
+		padding:20px 0px 20px 0px;
 		border-bottom:1px solid #39AD39;
 		width:80%;
 		margin:20px 0px 30px;

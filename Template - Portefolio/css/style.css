@@ -44,18 +44,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @font-face {
   font-family: 'Lane';
-  src: url("webfonts/LANENAR_.ttf") format("truetype"); }
+  src: url("./webfonts/LANENAR_.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'League Gothic';
-  src: url("webfonts/leaguegothic-regular-webfont.eot");
-  src: url("webfonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("webfonts/leaguegothic-regular-webfont.woff") format("woff"), url("webfonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("webfonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
+  src: url("./webfonts/leaguegothic-regular-webfont.eot");
+  src: url("./webfonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("./webfonts/leaguegothic-regular-webfont.woff") format("woff"), url("./webfonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("./webfonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Socialico';
-  src: url("webfonts/Socialico.ttf") format("truetype"), url("webfonts/Socialico.otf");
+  src: url("./webfonts/Socialico.ttf") format("truetype"), url("./webfonts/Socialico.otf");
   font-weight: normal;
   font-style: normal; }
 
@@ -76,7 +76,7 @@ div.contain {
 
 /* line 43, style.scss */
 h1 {
-  font: 50px/1.5 Lane, Open sans, Open sans ms, "sans-serif";
+  font: 50px/1.5 Lane, "sans-serif";
   padding: 15px 0px;
   line-height: 70px;
   background-image: url(../img/logoc.png);
@@ -213,7 +213,7 @@ section h3 {
   text-transform: uppercase; }
 /* line 157, style.scss */
 section h4 {
-  padding: 20px 0px 30px 0px;
+  padding: 20px 0px 20px 0px;
   border-bottom: 1px solid #39AD39;
   width: 80%;
   margin: 20px 0px 30px;
