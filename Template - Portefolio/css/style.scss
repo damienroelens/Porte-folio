@@ -23,14 +23,16 @@
 
 $fontStackTitle: Lane ,Open sans, Open sans ms,'sans-serif';
 $fontStackText: Gotham,  Helvetica, Arial, 'sans-serif';
-$fontStackNav: League Gothic, Impact, Helvetica, Arial, 'sans-serif';
+$fontStackNav: Gotham, Impact, Helvetica, Arial, 'sans-serif';
+$fontStackP: Verdana,Helvetica,Arial,'sans-serif';
 
 body{
 	font-family: $fontStackText;
+	background:transparent url('../img/cream_pixels.png');
 }
 
 header{
-	background-color: #111;
+	background: #111 url(../img/black_lozenge.png);
 }
 div.contain{
 	width:1200px;
@@ -72,9 +74,13 @@ a{
 	color:#39AD39;
 }
 
+p{
+	font-family: $fontStackP;
+}
+
 nav{
-	background-color: #484548;
-	font: 30px/1.5 $fontStackNav normal;
+	background: #484548 url(../img/stripe.png);
+	font: 20px/1.5 $fontStackNav normal;
 
 	&>ul{
 		@include horizontal-list();
@@ -108,27 +114,31 @@ nav{
 		}
 		&:last-child{
 			border:none;
-			background:#484548 url(../img/cont.png) 50px 5px no-repeat;
+			background: url(../img/mail2.svg) 50px 3px no-repeat;
+			-webkit-background-size: 25px;
+			background-size: 25px;
 		}
 		&>a:hover{
-			-webkit-text-shadow: 0px 0px 8px #111;
-			 -moz-text-shadow: 0px 0px 8px #111;
-			 -ms-text-shadow: 0px 0px 8px #111;
-			 -o-text-shadow: 0px 0px 8px #111;
-			 text-shadow: 0px 0px 8px #111; 
-			 background-color:#555;
-			 -webkit-border-radius: 5px;
-			  -moz-border-radius: 5px;
-			  border-radius: 5px; 
+			-webkit-text-shadow: 0px 0px 8px #FFF;
+			 -moz-text-shadow: 0px 0px 8px #FFF;
+			 -ms-text-shadow: 0px 0px 8px #FFF;
+			 -o-text-shadow: 0px 0px 8px #FFF;
+			 text-shadow: 0px 0px 8px #FFF; 			  
 		}
 		&:first-child{
-			background:#484548 url(../img/home.png) 50px 3px no-repeat;
+			background: url(../img/home.svg) 60px 3px no-repeat;
+			-webkit-background-size: 25px ;
+			background-size: 25px;
 		}
 		&+li{
-			background:#484548 url(../img/work.png) 50px 3px no-repeat;
+			background: url(../img/code.svg) 50px 3px no-repeat;
+			-webkit-background-size: 25px;
+			background-size: 25px;
 		}
 		&+li+li{
-			background:#484548 url(../img/me.png) 50px 3px no-repeat;
+			background: url(../img/profile.svg) 40px 3px no-repeat;
+			-webkit-background-size: 25px;
+			background-size: 25px;
 		}
 
 	}
@@ -136,7 +146,7 @@ nav{
 
 section{
 
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 
 	& h3{
 		border-bottom:1px solid #39AD39;
@@ -145,10 +155,13 @@ section{
 		text-transform: uppercase;
 	}
 	& h4{
-		padding:20px 20px 20px 0px;
+		padding:20px 0px 30px 0px;
 		border-bottom:1px solid #39AD39;
 		width:80%;
 		margin:20px 0px 30px;
+		text-transform: uppercase;
+		line-height: 33px;
+		vertical-align: bottom;
 	}
 }
 section#work{
@@ -177,6 +190,7 @@ section#work{
 		& a{
 			padding:10px 10px;
 			display: block;
+			padding-left:40px;
 		}
 		& a:hover{
 			background-color: rgba(50,50,50,0.5);
@@ -197,13 +211,27 @@ section#work{
 		position:relative;
 
 		& figcaption{
-			color:darken(#39AD39,10%);
+			color:lighten(#39AD39,10%);
 			position:absolute;
 			bottom:2px;
 			width:180px;
 			padding:10px;
 			background-color: #111;
+			@include transition(compact(all 0.5s linear));
+			height: 20px;
+			overflow:hidden;
+			&>p{
+				color:#EEE;
+				width:180px;
+				margin-top:20px;
+				font-style: normal;
+			}
 		}
+	}
+
+	& figure:hover figcaption{
+		height: 180px;
+		background:rgba(25,25,25,0.7);
 	}
 
 	& img{
@@ -235,13 +263,40 @@ section#present{
  	z-index: 9999; position: fixed; left: 0; top: 0; width: 100%;
  }
 
- .cont-up{
- 	margin-top: 81px;
+ section#wrapper.cont-up{
+ 	margin-top: 66px;
  }
+
+section#wrapper{
+	margin-top:20px;
+}
+#wrapper figure
+{
+	position:relative;
+}
+
+#wrapper figcaption
+{
+	position:absolute;
+	bottom:1px;
+	left:0;
+	color:#EEE;
+	background-color: rgba(26,26,26,0.7);
+	padding:20px;
+	width:1160px;
+	text-align: center;
+	&>h2
+	{
+		padding: 0px 0px 10px 0px;
+		font-family: $fontStackNav;
+		font-size: 1.25em;
+	}
+}
+
 
  footer{
 
-	background-color: #484548;
+	background: #484548 url(../img/stripe.png);
 	text-align: center;
 
 	& a:hover{
@@ -263,14 +318,19 @@ section#present{
 	}
 	
 	& .menu{
-		font: 30px/1.5 $fontStackNav normal;
+		font: 18px/1.5 $fontStackNav normal;
 		text-transform: uppercase;
 		height:60px;
 		@include horizontal-list();
+		
+		& li:first-child{
+			width:80px;
+		}
+
 		& li{
-			width:100px;
+			width:110px;
 			& a{
-				color:darken(#39AD39,10%);
+				color:lighten(#39AD39,10%);
 			}
 		}
 	}
@@ -278,6 +338,7 @@ section#present{
 
 	& .socio{
 		font:70px/1.5 'Socialico' normal;
+
 		& li{
 				min-width:80px;
 		}
@@ -295,12 +356,13 @@ section#present{
 
 		& ul{
 			@include horizontal-list();
-			
+			padding-left:150px;
 		}
 	}
 	& p{
 		color:darken(#EEE,20%);
 		padding-bottom: 20px;
+		font: 14px/1.5 Open sans, Open sans ms, Helvetica, Arial,'sans-serif';
 	}
 
  }
