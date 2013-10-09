@@ -1,5 +1,9 @@
 @import "compass";
 @import "compass/reset";
+$icons-spacing: 20px;
+@import "icons/*.png";
+@include all-icons-sprites;
+
 
 @font-face {font-family: 'Lane';src: url('./webfonts/LANENAR_.ttf') format('truetype');}
 
@@ -26,6 +30,8 @@ $fontStackTitle: Lane ,'sans-serif';
 $fontStackText: Gotham,  Helvetica, Arial, 'sans-serif';
 $fontStackNav: Gotham, Impact, Helvetica, Arial, 'sans-serif';
 $fontStackP: Verdana,Helvetica,Arial,'sans-serif';
+
+
 
 body{
 	font-family: $fontStackText;
@@ -81,7 +87,7 @@ p{
 
 nav{
 	background: #484548 url(../img/stripe.png);
-	font: 20px/1.5 $fontStackNav normal;
+	font: 18px/1.5 $fontStackNav ;
 
 	&>ul{
 		@include horizontal-list();
@@ -112,38 +118,49 @@ nav{
 			-o-text-shadow: 0;
 			text-shadow: 0;
 			text-transform: uppercase;
+			& span{
+				padding-left:25px;
+			}
 		}
 		&:last-child{
 			border:none;
-			background: url(../img/mail2.svg) 50px 3px no-repeat;
-			-webkit-background-size: 25px;
-			background-size: 25px;
 		}
-		&>a:hover{
-			-webkit-text-shadow: 0px 0px 8px #FFF;
-			 -moz-text-shadow: 0px 0px 8px #FFF;
-			 -ms-text-shadow: 0px 0px 8px #FFF;
-			 -o-text-shadow: 0px 0px 8px #FFF;
-			 text-shadow: 0px 0px 8px #FFF; 			  
+		&>a:hover .icons-home{
+			-webkit-text-shadow: 0px 0px 2px #FFF;
+			 -moz-text-shadow: 0px 0px 2px #FFF;
+			 -ms-text-shadow: 0px 0px 2px #FFF;
+			 -o-text-shadow: 0px 0px 2px #FFF;
+			 text-shadow: 0px 0px 2px #FFF; 
+			 background-position: 0 -200px;			  
 		}
-		&:first-child{
-			background: url(../img/home.svg) 60px 3px no-repeat;
-			-webkit-background-size: 25px ;
-			background-size: 25px;
+		&>a:hover .icons-code{
+			-webkit-text-shadow: 0px 0px 2px #FFF;
+			 -moz-text-shadow: 0px 0px 2px #FFF;
+			 -ms-text-shadow: 0px 0px 2px #FFF;
+			 -o-text-shadow: 0px 0px 2px #FFF;
+			 text-shadow: 0px 0px 2px #FFF; 
+			background-position: 0 -160px;
 		}
-		&+li{
-			background: url(../img/code.svg) 50px 3px no-repeat;
-			-webkit-background-size: 25px;
-			background-size: 25px;
+		&>a:hover .icons-mail2{
+			-webkit-text-shadow: 0px 0px 2px #FFF;
+			 -moz-text-shadow: 0px 0px 2px #FFF;
+			 -ms-text-shadow: 0px 0px 2px #FFF;
+			 -o-text-shadow: 0px 0px 2px #FFF;
+			 text-shadow: 0px 0px 2px #FFF; 
+			background-position: 0 -40px;
 		}
-		&+li+li{
-			background: url(../img/profile.svg) 40px 3px no-repeat;
-			-webkit-background-size: 25px;
-			background-size: 25px;
+		&>a:hover .icons-profile{
+			-webkit-text-shadow: 0px 0px 2px #FFF;
+			 -moz-text-shadow: 0px 0px 2px #FFF;
+			 -ms-text-shadow: 0px 0px 2px #FFF;
+			 -o-text-shadow: 0px 0px 2px #FFF;
+			 text-shadow: 0px 0px 2px #FFF; 
+			background-position: 0 -280px;
 		}
 
 	}
 }
+
 
 section{
 
@@ -274,6 +291,11 @@ section#wrapper{
 #wrapper figure
 {
 	position:relative;
+	display:inline-block;
+	& img{
+		width:33%;
+		height:33%;
+	}
 }
 
 #wrapper figcaption

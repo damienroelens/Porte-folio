@@ -3,16 +3,16 @@
 
 	var iTrombiDelay = 8000,
 		$trombiPhotos;
-/*	
+
 	var $phtos = $('#wrapper img').css({
-			width : 100,
-			height : 100,
+			width : '1200px',
+			height : '500px'
 	});
 
 	var $figu = $('#wrapper figure').css({
-			display : block
+			display : 'block'
 	});
-*/
+
 	var trombinext = function () {
 		var $current, $next;
 		( $current = $trombiPhotos.filter(":visible") ).delay(iTrombiDelay).fadeOut( function(){
