@@ -59,22 +59,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: normal;
   font-style: normal; }
 
-/* line 29, style.scss */
+/* line 30, style.scss */
 body {
   font-family: Gotham, Helvetica, Arial, "sans-serif";
   background: transparent url("../img/cream_pixels.png"); }
 
-/* line 34, style.scss */
+/* line 35, style.scss */
 header {
   background: #111111 url(../img/black_lozenge.png); }
 
-/* line 37, style.scss */
+/* line 38, style.scss */
 div.contain {
   width: 1200px;
   margin: auto;
   position: relative; }
 
-/* line 43, style.scss */
+/* line 44, style.scss */
 h1 {
   font: 50px/1.5 Lane, "sans-serif";
   padding: 15px 0px;
@@ -84,7 +84,7 @@ h1 {
   background-position: 0px 20px;
   padding-left: 120px; }
 
-/* line 53, style.scss */
+/* line 54, style.scss */
 h1 + p {
   font: 18px/1.5 Gotham, Helvetica, Arial, "sans-serif" normal;
   color: #eee;
@@ -94,29 +94,29 @@ h1 + p {
   position: absolute;
   top: 0;
   right: 0px; }
-/* line 62, style.scss */
+/* line 63, style.scss */
 h1 + p > em {
   color: #39AD39; }
 
-/* line 67, style.scss */
+/* line 68, style.scss */
 h3 {
   padding: 20px 20px 20px 0px;
   font: 22px/1.5 Gotham, Helvetica, Arial, "sans-serif" normal; }
 
-/* line 72, style.scss */
+/* line 73, style.scss */
 a {
   text-decoration: none;
   color: #39AD39; }
 
-/* line 77, style.scss */
+/* line 78, style.scss */
 p {
   font-family: Verdana, Helvetica, Arial, "sans-serif"; }
 
-/* line 81, style.scss */
+/* line 82, style.scss */
 nav {
   background: #484548 url(../img/stripe.png);
   font: 20px/1.5 Gotham, Impact, Helvetica, Arial, "sans-serif" normal; }
-/* line 85, style.scss */
+/* line 86, style.scss */
 nav > ul {
   margin: 0;
   padding: 0;
@@ -146,19 +146,19 @@ nav > ul li:last-child {
 /* line 50, ../../../../../Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 nav > ul li.last {
   padding-right: 0; }
-/* line 92, style.scss */
+/* line 93, style.scss */
 nav > h2 {
   width: 0;
   height: 0;
   white-space: nowrap;
   overflow: hidden;
   text-indent: 9999px; }
-/* line 99, style.scss */
+/* line 100, style.scss */
 nav li {
   border-right: 1px solid #39AD39;
   padding: 0;
   margin: 8px 0; }
-/* line 103, style.scss */
+/* line 104, style.scss */
 nav li > a {
   width: 290px;
   display: block;
@@ -173,45 +173,45 @@ nav li > a {
   -o-text-shadow: 0;
   text-shadow: 0;
   text-transform: uppercase; }
-/* line 115, style.scss */
+/* line 116, style.scss */
 nav li:last-child {
   border: none;
   background: url(../img/mail2.svg) 50px 3px no-repeat;
   -webkit-background-size: 25px;
   background-size: 25px; }
-/* line 121, style.scss */
+/* line 122, style.scss */
 nav li > a:hover {
   -webkit-text-shadow: 0px 0px 8px #FFF;
   -moz-text-shadow: 0px 0px 8px #FFF;
   -ms-text-shadow: 0px 0px 8px #FFF;
   -o-text-shadow: 0px 0px 8px #FFF;
   text-shadow: 0px 0px 8px #FFF; }
-/* line 128, style.scss */
+/* line 129, style.scss */
 nav li:first-child {
   background: url(../img/home.svg) 60px 3px no-repeat;
   -webkit-background-size: 25px;
   background-size: 25px; }
-/* line 133, style.scss */
+/* line 134, style.scss */
 nav li + li {
   background: url(../img/code.svg) 50px 3px no-repeat;
   -webkit-background-size: 25px;
   background-size: 25px; }
-/* line 138, style.scss */
+/* line 139, style.scss */
 nav li + li + li {
   background: url(../img/profile.svg) 40px 3px no-repeat;
   -webkit-background-size: 25px;
   background-size: 25px; }
 
-/* line 147, style.scss */
+/* line 148, style.scss */
 section {
   margin-bottom: 20px; }
-/* line 151, style.scss */
+/* line 152, style.scss */
 section h3 {
   border-bottom: 1px solid #39AD39;
   width: 400px;
   margin: 20px 0px 30px;
   text-transform: uppercase; }
-/* line 157, style.scss */
+/* line 158, style.scss */
 section h4 {
   padding: 20px 0px 20px 0px;
   border-bottom: 1px solid #39AD39;
@@ -221,34 +221,34 @@ section h4 {
   line-height: 33px;
   vertical-align: bottom; }
 
-/* line 167, style.scss */
+/* line 168, style.scss */
 section#work {
   width: 1200px;
   margin: auto;
   padding-top: 50px;
   margin-bottom: 50px; }
-/* line 174, style.scss */
+/* line 175, style.scss */
 section#work div.contain {
   width: 63%;
   display: inline-block;
   vertical-align: top;
   border-right: 1px solid #39AD39;
   margin-right: 50px; }
-/* line 181, style.scss */
+/* line 182, style.scss */
 section#work aside {
   width: 28%;
   display: inline-block;
   margin-left: 30px; }
-/* line 186, style.scss */
+/* line 187, style.scss */
 section#work aside li {
   margin: 10px 0px;
   width: 80%; }
-/* line 190, style.scss */
+/* line 191, style.scss */
 section#work aside a {
   padding: 10px 10px;
   display: block;
   padding-left: 40px; }
-/* line 195, style.scss */
+/* line 196, style.scss */
 section#work aside a:hover {
   background-color: rgba(50, 50, 50, 0.5);
   -webkit-border-radius: 5px;
@@ -259,12 +259,12 @@ section#work aside a:hover {
   -ms-text-shadow: 0px 0px 2px #111;
   -o-text-shadow: 0px 0px 2px #111;
   text-shadow: 0px 0px 2px #111; }
-/* line 208, style.scss */
+/* line 209, style.scss */
 section#work figure {
   display: inline-block;
   margin-right: 20px;
   position: relative; }
-/* line 213, style.scss */
+/* line 214, style.scss */
 section#work figure figcaption {
   color: #53c653;
   position: absolute;
@@ -278,29 +278,29 @@ section#work figure figcaption {
   transition: all 0.5s linear;
   height: 20px;
   overflow: hidden; }
-/* line 223, style.scss */
+/* line 224, style.scss */
 section#work figure figcaption > p {
   color: #EEE;
   width: 180px;
   margin-top: 20px;
   font-style: normal; }
-/* line 232, style.scss */
+/* line 233, style.scss */
 section#work figure:hover figcaption {
   height: 180px;
   background: rgba(25, 25, 25, 0.7); }
-/* line 237, style.scss */
+/* line 238, style.scss */
 section#work img {
   width: 200px;
   height: 200px; }
 
-/* line 246, style.scss */
+/* line 247, style.scss */
 section#present img {
   display: block;
   float: right;
   padding: 5px;
   border-radius: 5px;
   margin: 20px 0px 20px 20px; }
-/* line 253, style.scss */
+/* line 254, style.scss */
 section#present p {
   width: 40%;
   display: inline-block;
@@ -308,7 +308,7 @@ section#present p {
   margin-right: 20px;
   line-height: 1.5; }
 
-/* line 262, style.scss */
+/* line 263, style.scss */
 .f-nav {
   z-index: 9999;
   position: fixed;
@@ -316,19 +316,19 @@ section#present p {
   top: 0;
   width: 100%; }
 
-/* line 266, style.scss */
+/* line 267, style.scss */
 section#wrapper.cont-up {
   margin-top: 66px; }
 
-/* line 270, style.scss */
+/* line 271, style.scss */
 section#wrapper {
   margin-top: 20px; }
 
-/* line 274, style.scss */
+/* line 275, style.scss */
 #wrapper figure {
   position: relative; }
 
-/* line 279, style.scss */
+/* line 280, style.scss */
 #wrapper figcaption {
   position: absolute;
   bottom: 1px;
@@ -338,17 +338,17 @@ section#wrapper {
   padding: 20px;
   width: 1160px;
   text-align: center; }
-/* line 289, style.scss */
+/* line 290, style.scss */
 #wrapper figcaption > h2 {
   padding: 0px 0px 10px 0px;
   font-family: Gotham, Impact, Helvetica, Arial, "sans-serif";
   font-size: 1.25em; }
 
-/* line 297, style.scss */
+/* line 298, style.scss */
 footer {
   background: #484548 url(../img/stripe.png);
   text-align: center; }
-/* line 302, style.scss */
+/* line 303, style.scss */
 footer a:hover {
   -webkit-text-shadow: 0px 0px 8px #111;
   -moz-text-shadow: 0px 0px 8px #111;
@@ -358,12 +358,12 @@ footer a:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-/* line 313, style.scss */
+/* line 314, style.scss */
 footer > div.contain > div {
   width: 530px;
   display: inline-block;
   padding: 10px; }
-/* line 320, style.scss */
+/* line 321, style.scss */
 footer .menu {
   font: 18px/1.5 Gotham, Impact, Helvetica, Arial, "sans-serif" normal;
   text-transform: uppercase;
@@ -392,22 +392,22 @@ footer .menu li:last-child {
 /* line 50, ../../../../../Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 footer .menu li.last {
   padding-right: 0; }
-/* line 326, style.scss */
+/* line 327, style.scss */
 footer .menu li:first-child {
   width: 80px; }
-/* line 330, style.scss */
+/* line 331, style.scss */
 footer .menu li {
   width: 110px; }
-/* line 332, style.scss */
+/* line 333, style.scss */
 footer .menu li a {
   color: #53c653; }
-/* line 339, style.scss */
+/* line 340, style.scss */
 footer .socio {
   font: 70px/1.5 'Socialico' normal; }
-/* line 342, style.scss */
+/* line 343, style.scss */
 footer .socio li {
   min-width: 80px; }
-/* line 346, style.scss */
+/* line 347, style.scss */
 footer .socio a {
   color: #bbbbbb;
   text-transform: uppercase;
@@ -415,11 +415,11 @@ footer .socio a {
   -moz-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear; }
-/* line 351, style.scss */
+/* line 352, style.scss */
 footer .socio a:hover {
   text-transform: lowercase;
   color: #2c872c; }
-/* line 357, style.scss */
+/* line 358, style.scss */
 footer .socio ul {
   margin: 0;
   padding: 0;
@@ -446,7 +446,7 @@ footer .socio ul li:last-child {
 /* line 50, ../../../../../Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 footer .socio ul li.last {
   padding-right: 0; }
-/* line 362, style.scss */
+/* line 363, style.scss */
 footer p {
   color: #bbbbbb;
   padding-bottom: 20px;
