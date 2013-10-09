@@ -6,18 +6,10 @@ $icons-spacing: 20px;
 
 
 @font-face {font-family: 'Lane';src: url('./webfonts/LANENAR_.ttf') format('truetype');}
+@font-face {font-family: 'Montserrat';src: url('./webfonts/Montserrat-Regular.ttf') format('truetype');}
+@font-face {font-family: 'Open';src: url('./webfonts/OpenSans-Bold.ttf') format('truetype');}
+@font-face {font-family: 'Open sans';src: url('./webfonts/OpenSans-Regular.ttf') format('truetype');}
 
-@font-face {
-    font-family: 'League Gothic';
-    src: url('./webfonts/leaguegothic-regular-webfont.eot');
-    src: url('./webfonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./webfonts/leaguegothic-regular-webfont.woff') format('woff'),
-         url('./webfonts/leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('./webfonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 @font-face {
     font-family: 'Socialico';
     src: url('./webfonts/Socialico.ttf') format('truetype'),
@@ -27,8 +19,8 @@ $icons-spacing: 20px;
 }
 
 $fontStackTitle: Lane ,'sans-serif';
-$fontStackText: Gotham,  Helvetica, Arial, 'sans-serif';
-$fontStackNav: Gotham, Impact, Helvetica, Arial, 'sans-serif';
+$fontStackText: Open sans,  Helvetica, Arial, 'sans-serif';
+$fontStackNav: Open, Montserrat, Helvetica, Arial, 'sans-serif';
 $fontStackP: Verdana,Helvetica,Arial,'sans-serif';
 
 
@@ -87,7 +79,7 @@ p{
 
 nav{
 	background: #484548 url(../img/stripe.png);
-	font: 18px/1.5 $fontStackNav ;
+	font: 16px/1.5 $fontStackNav ;
 
 	&>ul{
 		@include horizontal-list();
@@ -95,13 +87,6 @@ nav{
 		width: 1200px;
 		margin: auto;
 		text-align: center;
-	}
-	&>h2{
-		width:0;
-		height: 0;
-		white-space: nowrap;
-		overflow: hidden;
-		text-indent:9999px;
 	}
 	& li{
 		border-right:1px solid #39AD39;
@@ -161,6 +146,13 @@ nav{
 	}
 }
 
+.h2hid{
+		width:0;
+		height: 0;
+		white-space: nowrap;
+		overflow: hidden;
+		text-indent:9999px;
+	}
 
 section{
 
@@ -287,11 +279,15 @@ section#present{
 
 section#wrapper{
 	margin-top:20px;
+
+	& h2{
+		@extend .h2hid;
+	}
 }
 #wrapper figure
 {
 	position:relative;
-	display:inline-block;
+	display:inline;
 	& img{
 		width:33%;
 		height:33%;
@@ -305,14 +301,17 @@ section#wrapper{
 	left:0;
 	color:#EEE;
 	background-color: rgba(26,26,26,0.7);
-	padding:20px;
-	width:1160px;
-	text-align: center;
-	&>h2
+	padding:0px 0px;
+	width:80%;
+	margin:0 10% 5px;
+	&>h3
 	{
-		padding: 0px 0px 10px 0px;
+		border:none;
+		padding:10px;
+		margin:0;
+		text-transform: none;
 		font-family: $fontStackNav;
-		font-size: 1.25em;
+		font-size: 14px;
 	}
 }
 
@@ -369,6 +368,12 @@ section#wrapper{
 		& a{
 			color:darken(#EEE,20%);
 			text-transform: uppercase;
+			-webkit-text-shadow: 1px 1px 1px #DDD, -1px -1px 1px #111;
+			-moz-text-shadow: 1px 1px 1px #DDD, -1px -1px 1px #111;
+			-ms-text-shadow: 1px 1px 1px #DDD, -1px -1px 1px #111;
+			-o-text-shadow: 1px 1px 1px #DDD, -1px -1px 1px #111;
+			text-shadow: 1px 1px 1px #DDD, -1px -1px 1px #111;
+
 			@include transition(compact(all 0.4s linear));
 
 			&:hover{
@@ -383,8 +388,10 @@ section#wrapper{
 		}
 	}
 	& p{
+		position:absolute;
+		bottom:20px;
+		right:480px;
 		color:darken(#EEE,20%);
-		padding-bottom: 20px;
 		font: 14px/1.5 Open sans, Open sans ms, Helvetica, Arial,'sans-serif';
 	}
 

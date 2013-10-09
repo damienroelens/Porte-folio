@@ -13,6 +13,11 @@
 			display : 'block'
 	});
 
+
+	var $figcap = $('#wrapper figcaption').css({
+			marginBottom : '1px'
+	});
+
 	var trombinext = function () {
 		var $current, $next;
 		( $current = $trombiPhotos.filter(":visible") ).delay(iTrombiDelay).fadeOut( function(){
