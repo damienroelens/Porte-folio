@@ -67,8 +67,11 @@ a{
 	color:#39AD39;
 }
 
+
 p{
 	font-family: $fontStackP;
+	line-height: 1.5;
+	margin:0px 0px 20px 0px;
 }
 
 nav{
@@ -150,11 +153,11 @@ nav{
 
 section{
 
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 
 	& h3{
 		border-bottom:1px solid #39AD39;
-		width:400px;
+		width:500px;
 		margin:20px 0px 30px;
 		text-transform: uppercase;
 	}
@@ -257,11 +260,26 @@ section#present{
 		margin:20px 0px 20px 20px;
 	}
 	& p{
-		width:40%;
+		width:38%;
 		display: inline-block;
 		vertical-align: top;
 		margin-right:20px;
 		line-height: 1.5;
+	}
+	& p+p{
+		margin-left:20px;
+	}
+}
+
+.worked{
+	margin-top:40px;
+	& img{
+		margin:20px;
+		float:left;
+	}
+	.contain:after{
+		content:"";
+		clear:both;
 	}
 }
 
@@ -273,7 +291,9 @@ section#present{
  	margin-top: 80px;
  }
 
- section#wrapper .cont-up{
+
+
+section#wrapper.cont-up{
  	margin-top: 80px;
  }
 

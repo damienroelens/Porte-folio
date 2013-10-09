@@ -33,7 +33,13 @@
 	});
 
 	var nav = $('.nav-container');
-	    var cont = $('#wrapper');
+	      if ($('#wrapper').length) { // implies *not* zero
+			    var cont = $('#wrapper');
+			  } else {
+			    var cont = $('.worked');
+			  };
+
+
 	    
 	    $(window).scroll(function () {
 	        if ($(this).scrollTop() > 100) {
