@@ -9,14 +9,8 @@ $icons-spacing: 20px;
 @font-face {font-family: 'Montserrat';src: url('./webfonts/Montserrat-Regular.ttf') format('truetype');}
 @font-face {font-family: 'Open';src: url('./webfonts/OpenSans-Bold.ttf') format('truetype');}
 @font-face {font-family: 'Open sans';src: url('./webfonts/OpenSans-Regular.ttf') format('truetype');}
+@font-face {font-family: 'Socialico';src: url('./webfonts/Socialico.ttf') format('truetype');}
 
-@font-face {
-    font-family: 'Socialico';
-    src: url('./webfonts/Socialico.ttf') format('truetype'),
-         url('./webfonts/Socialico.otf');
-    font-weight: normal;
-    font-style: normal;
-}
 
 $fontStackTitle: Lane ,'sans-serif';
 $fontStackText: Open sans,  Helvetica, Arial, 'sans-serif';
@@ -50,7 +44,7 @@ h1{
 }
 
 h1+p{
-	font:18px/1.5 $fontStackText normal;
+	font:18px/1.5 $fontStackNav;
 	color:#eee;
 	padding:40px;
 	padding-right:0;
@@ -65,7 +59,7 @@ h1+p{
 
 h3{
 	padding:20px 20px 20px 0px;
-	font:22px/1.5 $fontStackText normal;
+	font:22px/1.5 $fontStackText;
 }
 
 a{
@@ -97,11 +91,11 @@ nav{
 			display:block;
 			color:#51CF51;
 			@include transition(compact(all 0.2s linear));
-			-webkit-text-shadow: 0;
-			-moz-text-shadow: 0;
-			-ms-text-shadow: 0;
-			-o-text-shadow: 0;
-			text-shadow: 0;
+			-webkit-text-shadow: none;
+			-moz-text-shadow: none;
+			-ms-text-shadow: none;
+			-o-text-shadow: none;
+			text-shadow: none;
 			text-transform: uppercase;
 			& span{
 				padding-left:25px;
@@ -192,10 +186,12 @@ section#work{
 		width:28%;
 		display: inline-block;
 		margin-left:30px;
+		
 
 		& li{
 			margin:10px 0px;
 			width:80%;
+			font-family: $fontStackNav ;
 		}
 		& a{
 			padding:10px 10px;
@@ -227,7 +223,7 @@ section#work{
 			width:180px;
 			padding:10px;
 			background-color: #111;
-			@include transition(compact(all 0.5s linear));
+			@include transition(compact(all 0.2s linear));
 			height: 20px;
 			overflow:hidden;
 			&>p{
@@ -273,12 +269,16 @@ section#present{
  	z-index: 9999; position: fixed; left: 0; top: 0; width: 100%;
  }
 
- section#wrapper.cont-up{
- 	margin-top: 66px;
+.cont-up{
+ 	margin-top: 80px;
+ }
+
+ section#wrapper .cont-up{
+ 	margin-top: 80px;
  }
 
 section#wrapper{
-	margin-top:20px;
+	margin-top:40px;
 
 	& h2{
 		@extend .h2hid;
@@ -340,7 +340,7 @@ section#wrapper{
 	}
 	
 	& .menu{
-		font: 18px/1.5 $fontStackNav normal;
+		font: 18px/1.5 $fontStackNav;
 		text-transform: uppercase;
 		height:60px;
 		@include horizontal-list();
@@ -359,7 +359,7 @@ section#wrapper{
 
 
 	& .socio{
-		font:70px/1.5 'Socialico' normal;
+		font:70px/1.5 'Socialico';
 
 		& li{
 				min-width:80px;
