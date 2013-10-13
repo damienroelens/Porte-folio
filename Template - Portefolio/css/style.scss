@@ -113,7 +113,7 @@ nav{
 			 -ms-text-shadow: 0px 0px 2px #FFF;
 			 -o-text-shadow: 0px 0px 2px #FFF;
 			 text-shadow: 0px 0px 2px #FFF; 
-			 background-position: 0 -200px;			  
+			 background-position: 0 -280px;			  
 		}
 		&>a:hover .icons-code{
 			-webkit-text-shadow: 0px 0px 2px #FFF;
@@ -121,7 +121,7 @@ nav{
 			 -ms-text-shadow: 0px 0px 2px #FFF;
 			 -o-text-shadow: 0px 0px 2px #FFF;
 			 text-shadow: 0px 0px 2px #FFF; 
-			background-position: 0 -160px;
+			background-position: 0 -240px;
 		}
 		&>a:hover .icons-mail2{
 			-webkit-text-shadow: 0px 0px 2px #FFF;
@@ -137,7 +137,7 @@ nav{
 			 -ms-text-shadow: 0px 0px 2px #FFF;
 			 -o-text-shadow: 0px 0px 2px #FFF;
 			 text-shadow: 0px 0px 2px #FFF; 
-			background-position: 0 -280px;
+			background-position: 0 -440px;
 		}
 
 	}
@@ -171,47 +171,17 @@ section{
 		vertical-align: bottom;
 	}
 }
-section#work{
+section#catwork{
 
 	width:1200px;
 	margin:auto;
-	padding-top: 50px;
 	margin-bottom: 50px;
 
 	& div.contain{
 		width: 63%;
 		display: inline-block;
 		vertical-align: top;
-		border-right:1px solid #39AD39;
 		margin-right:50px;
-	}
-	& aside{
-		width:28%;
-		display: inline-block;
-		margin-left:30px;
-		
-
-		& li{
-			margin:10px 0px;
-			width:80%;
-			font-family: $fontStackNav ;
-		}
-		& a{
-			padding:10px 10px;
-			display: block;
-			padding-left:40px;
-		}
-		& a:hover{
-			background-color: rgba(50,50,50,0.5);
-			-webkit-border-radius: 5px;
-			  -moz-border-radius: 5px;
-			  border-radius: 5px; 
-			  -webkit-text-shadow: 0px 0px 2px #111;
-			 -moz-text-shadow: 0px 0px 2px #111;
-			 -ms-text-shadow: 0px 0px 2px #111;
-			 -o-text-shadow: 0px 0px 2px #111;
-			 text-shadow: 0px 0px 2px #111; 
-		}
 	}
 
 	& figure{
@@ -220,7 +190,9 @@ section#work{
 		position:relative;
 
 		& figcaption{
+			font-family: $fontStackNav;
 			color:lighten(#39AD39,10%);
+			border-radius: 20px;
 			position:absolute;
 			bottom:2px;
 			width:180px;
@@ -249,25 +221,67 @@ section#work{
 	}
 }
 
+aside{
+		width:28%;
+		display: inline-block;
+		margin-left:30px;
+		
+
+		& li{
+			margin:10px 0px;
+			width:80%;
+			font-family: $fontStackNav ;
+		}
+		& a{
+			padding:10px 10px;
+			display: block;
+			& span{
+				padding-left:40px;
+			}
+		}
+		& a:hover{
+			background: rgba(50,50,50,0.5);
+			-webkit-border-radius: 5px;
+			  -moz-border-radius: 5px;
+			  border-radius: 5px; 
+			  -webkit-text-shadow: 0px 0px 2px #111;
+			 -moz-text-shadow: 0px 0px 2px #111;
+			 -ms-text-shadow: 0px 0px 2px #111;
+			 -o-text-shadow: 0px 0px 2px #111;
+			 text-shadow: 0px 0px 2px #111; 
+		}
+	}
+
 
 section#present{
+	
+	background: #484548 url(../img/stripe.png);
+	color:#eee;
+	padding-bottom:20px;
 
 	& img{
-		display:block;
-		float:right;
+		display:inline-block;
 		padding:5px;
-		border-radius: 5px;
-		margin:20px 0px 20px 20px;
+		border-radius: 25px;
+		width:22%;
+		height:22%;
+		border:5px solid #39AD39;
+		opacity:0.7;
+		filter: url(../img/squairy_light.png);
 	}
 	& p{
-		width:38%;
+		width:34%;
 		display: inline-block;
-		vertical-align: top;
-		margin-right:20px;
 		line-height: 1.5;
+		margin-right:40px;
+		text-align: justify;
+		vertical-align: top;
+		margin-top:20px;
 	}
-	& p+p{
-		margin-left:20px;
+	& img+p{
+
+		margin-left:40px;
+		margin-right: 0;
 	}
 }
 
@@ -312,18 +326,27 @@ section#wrapper{
 		width:33%;
 		height:33%;
 	}
+	&:nth-child(2n+1) figcaption{
+		bottom:42px;
+		left:0;
+		margin-bottom: 40px;
+		padding:0;
+	}
+	&:nth-child(2n) figcaption{
+			top:0;
+			right:0;
+	}
 }
 
 #wrapper figcaption
 {
 	position:absolute;
-	bottom:1px;
-	left:0;
+	max-height:420px;
 	color:#EEE;
 	background-color: rgba(26,26,26,0.7);
 	padding:0px 0px;
-	width:80%;
-	margin:0 10% 5px;
+	width:25%;
+	margin:40px;
 	&>h3
 	{
 		border:none;
@@ -332,6 +355,9 @@ section#wrapper{
 		text-transform: none;
 		font-family: $fontStackNav;
 		font-size: 14px;
+	}
+	& p{
+		padding:10px;
 	}
 }
 
@@ -386,19 +412,25 @@ section#wrapper{
 		}
 
 		& a{
+			display:block;
 			color:darken(#EEE,20%);
 			text-transform: uppercase;
-			-webkit-text-shadow: 1px 1px 1px #DDD, -1px -1px 1px #111;
-			-moz-text-shadow: 1px 1px 1px #DDD, -1px -1px 1px #111;
-			-ms-text-shadow: 1px 1px 1px #DDD, -1px -1px 1px #111;
-			-o-text-shadow: 1px 1px 1px #DDD, -1px -1px 1px #111;
-			text-shadow: 1px 1px 1px #DDD, -1px -1px 1px #111;
+			-webkit-text-shadow: 1px 1px 1px #333, -1px -1px 1px #111;
+			-moz-text-shadow: 1px 1px 1px #333, -1px -1px 1px #111;
+			-ms-text-shadow: 1px 1px 1px #333, -1px -1px 1px #111;
+			-o-text-shadow: 1px 1px 1px #333, -1px -1px 1px #111;
+			text-shadow: 1px 1px 1px #333, -1px -1px 1px #111;
 
-			@include transition(compact(all 0.4s linear));
+			@include transition(compact(all 0.1s linear));
 
 			&:hover{
-				text-transform: lowercase;
+				
 				color:darken(#39AD39,10%);
+				-webkit-text-shadow:-1px -1px 1px #111, 1px 1px 1px #DDD; 
+				-moz-text-shadow:-1px -1px 1px #111, 1px 1px 1px #DDD; 
+				-ms-text-shadow:-1px -1px 1px #111, 1px 1px 1px #DDD; 
+				-o-text-shadow:-1px -1px 1px #111, 1px 1px 1px #DDD; 
+				text-shadow:-1px -1px 1px #111, 1px 1px 1px #DDD; 
 			}
 		}	
 
