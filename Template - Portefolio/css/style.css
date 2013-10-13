@@ -137,10 +137,13 @@ h1 {
   line-height: 70px;
   background-image: url(../img/logoc.png);
   background-repeat: no-repeat;
-  background-position: 0px 20px;
+  background-position: 0px 20px; }
+/* line 44, style.scss */
+h1 > a {
+  display: block;
   padding-left: 120px; }
 
-/* line 46, style.scss */
+/* line 50, style.scss */
 h1 + p {
   font: 18px/1.5 Open, Montserrat, Helvetica, Arial, "sans-serif";
   color: #eee;
@@ -150,31 +153,31 @@ h1 + p {
   position: absolute;
   top: 0;
   right: 0px; }
-/* line 55, style.scss */
+/* line 59, style.scss */
 h1 + p > em {
   color: #39AD39; }
 
-/* line 60, style.scss */
+/* line 64, style.scss */
 h3 {
   padding: 20px 20px 20px 0px;
   font: 22px/1.5 Open sans, Helvetica, Arial, "sans-serif"; }
 
-/* line 65, style.scss */
+/* line 69, style.scss */
 a {
   text-decoration: none;
   color: #39AD39; }
 
-/* line 71, style.scss */
+/* line 75, style.scss */
 p {
   font-family: Verdana, Helvetica, Arial, "sans-serif";
   line-height: 1.5;
   margin: 0px 0px 20px 0px; }
 
-/* line 77, style.scss */
+/* line 81, style.scss */
 nav {
   background: #484548 url(../img/stripe.png);
   font: 16px/1.5 Open, Montserrat, Helvetica, Arial, "sans-serif"; }
-/* line 81, style.scss */
+/* line 85, style.scss */
 nav > ul {
   margin: 0;
   padding: 0;
@@ -204,12 +207,12 @@ nav > ul li:last-child {
 /* line 50, ../../../../../Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 nav > ul li.last {
   padding-right: 0; }
-/* line 88, style.scss */
+/* line 92, style.scss */
 nav li {
   border-right: 1px solid #39AD39;
   padding: 0;
   margin: 8px 0; }
-/* line 92, style.scss */
+/* line 96, style.scss */
 nav li > a {
   width: 290px;
   display: block;
@@ -224,13 +227,13 @@ nav li > a {
   -o-text-shadow: none;
   text-shadow: none;
   text-transform: uppercase; }
-/* line 103, style.scss */
+/* line 107, style.scss */
 nav li > a span {
   padding-left: 25px; }
-/* line 107, style.scss */
+/* line 111, style.scss */
 nav li:last-child {
   border: none; }
-/* line 110, style.scss */
+/* line 114, style.scss */
 nav li > a:hover .icons-home {
   -webkit-text-shadow: 0px 0px 2px #FFF;
   -moz-text-shadow: 0px 0px 2px #FFF;
@@ -238,7 +241,7 @@ nav li > a:hover .icons-home {
   -o-text-shadow: 0px 0px 2px #FFF;
   text-shadow: 0px 0px 2px #FFF;
   background-position: 0 -280px; }
-/* line 118, style.scss */
+/* line 122, style.scss */
 nav li > a:hover .icons-code {
   -webkit-text-shadow: 0px 0px 2px #FFF;
   -moz-text-shadow: 0px 0px 2px #FFF;
@@ -246,7 +249,7 @@ nav li > a:hover .icons-code {
   -o-text-shadow: 0px 0px 2px #FFF;
   text-shadow: 0px 0px 2px #FFF;
   background-position: 0 -240px; }
-/* line 126, style.scss */
+/* line 130, style.scss */
 nav li > a:hover .icons-mail2 {
   -webkit-text-shadow: 0px 0px 2px #FFF;
   -moz-text-shadow: 0px 0px 2px #FFF;
@@ -254,7 +257,7 @@ nav li > a:hover .icons-mail2 {
   -o-text-shadow: 0px 0px 2px #FFF;
   text-shadow: 0px 0px 2px #FFF;
   background-position: 0 -40px; }
-/* line 134, style.scss */
+/* line 138, style.scss */
 nav li > a:hover .icons-profile {
   -webkit-text-shadow: 0px 0px 2px #FFF;
   -moz-text-shadow: 0px 0px 2px #FFF;
@@ -263,7 +266,7 @@ nav li > a:hover .icons-profile {
   text-shadow: 0px 0px 2px #FFF;
   background-position: 0 -440px; }
 
-/* line 146, style.scss */
+/* line 150, style.scss */
 .h2hid, section#wrapper h2 {
   width: 0;
   height: 0;
@@ -271,42 +274,43 @@ nav li > a:hover .icons-profile {
   overflow: hidden;
   text-indent: 9999px; }
 
-/* line 154, style.scss */
+/* line 158, style.scss */
 section {
   margin-bottom: 40px; }
-/* line 158, style.scss */
+/* line 162, style.scss */
 section h3 {
   border-bottom: 1px solid #39AD39;
   width: 500px;
-  margin: 20px 0px 30px;
-  text-transform: uppercase; }
-/* line 164, style.scss */
+  margin: 0px 0px 30px;
+  text-transform: uppercase;
+  padding-top: 0; }
+/* line 169, style.scss */
 section h4 {
-  padding: 20px 0px 20px 0px;
+  padding: 0px 0px 20px 0px;
   border-bottom: 1px solid #39AD39;
   width: 80%;
-  margin: 20px 0px 30px;
+  margin: 0px 0px 30px;
   text-transform: uppercase;
   line-height: 33px;
   vertical-align: bottom; }
 
-/* line 174, style.scss */
+/* line 179, style.scss */
 section#catwork {
   width: 1200px;
   margin: auto;
   margin-bottom: 50px; }
-/* line 180, style.scss */
+/* line 185, style.scss */
 section#catwork div.contain {
   width: 63%;
   display: inline-block;
   vertical-align: top;
   margin-right: 50px; }
-/* line 187, style.scss */
+/* line 192, style.scss */
 section#catwork figure {
   display: inline-block;
   margin-right: 20px;
   position: relative; }
-/* line 192, style.scss */
+/* line 197, style.scss */
 section#catwork figure figcaption {
   font-family: Open, Montserrat, Helvetica, Arial, "sans-serif";
   color: #53c653;
@@ -322,39 +326,39 @@ section#catwork figure figcaption {
   transition: all 0.2s linear;
   height: 20px;
   overflow: hidden; }
-/* line 204, style.scss */
+/* line 209, style.scss */
 section#catwork figure figcaption > p {
   color: #EEE;
   width: 180px;
   margin-top: 20px;
   font-style: normal; }
-/* line 213, style.scss */
+/* line 218, style.scss */
 section#catwork figure:hover figcaption {
   height: 180px;
   background: rgba(25, 25, 25, 0.7); }
-/* line 218, style.scss */
+/* line 223, style.scss */
 section#catwork img {
   width: 200px;
   height: 200px; }
 
-/* line 224, style.scss */
+/* line 229, style.scss */
 aside {
   width: 28%;
   display: inline-block;
   margin-left: 30px; }
-/* line 230, style.scss */
+/* line 235, style.scss */
 aside li {
   margin: 10px 0px;
   width: 80%;
   font-family: Open, Montserrat, Helvetica, Arial, "sans-serif"; }
-/* line 235, style.scss */
+/* line 240, style.scss */
 aside a {
   padding: 10px 10px;
   display: block; }
-/* line 238, style.scss */
+/* line 243, style.scss */
 aside a span {
   padding-left: 40px; }
-/* line 242, style.scss */
+/* line 247, style.scss */
 aside a:hover {
   background: rgba(50, 50, 50, 0.5);
   -webkit-border-radius: 5px;
@@ -366,48 +370,66 @@ aside a:hover {
   -o-text-shadow: 0px 0px 2px #111;
   text-shadow: 0px 0px 2px #111; }
 
-/* line 256, style.scss */
+/* line 261, style.scss */
 section#present {
   background: #484548 url(../img/stripe.png);
   color: #eee;
-  padding-bottom: 20px; }
-/* line 262, style.scss */
-section#present img {
+  padding-bottom: 40px;
+  padding-top: 40px; }
+/* line 268, style.scss */
+section#present div.presimg {
   display: inline-block;
+  opacity: 0.8;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  border-radius: 25px;
+  border: 5px solid #39AD39; }
+/* line 277, style.scss */
+section#present div.presimg img {
   padding: 5px;
   border-radius: 25px;
-  width: 22%;
-  height: 22%;
-  border: 5px solid #39AD39;
-  opacity: 0.7;
-  filter: url(../img/squairy_light.png); }
-/* line 272, style.scss */
+  display: block;
+  width: 150px;
+  height: 150px; }
+/* line 285, style.scss */
 section#present p {
-  width: 34%;
+  width: 40%;
   display: inline-block;
   line-height: 1.5;
-  margin-right: 40px;
+  margin-right: 20px;
   text-align: justify;
   vertical-align: top;
   margin-top: 20px; }
-/* line 281, style.scss */
-section#present img + p {
-  margin-left: 40px;
+/* line 294, style.scss */
+section#present div + p {
+  margin-left: 20px;
   margin-right: 0; }
+/* line 299, style.scss */
+section#present div.trame {
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../img/trame.png");
+  z-index: 10; }
 
-/* line 288, style.scss */
+/* line 311, style.scss */
 .worked {
   margin-top: 40px; }
-/* line 290, style.scss */
+/* line 313, style.scss */
 .worked img {
   margin: 20px;
   float: left; }
-/* line 294, style.scss */
+/* line 317, style.scss */
 .worked .contain:after {
   content: "";
   clear: both; }
 
-/* line 300, style.scss */
+/* line 323, style.scss */
 .f-nav {
   z-index: 9999;
   position: fixed;
@@ -415,38 +437,38 @@ section#present img + p {
   top: 0;
   width: 100%; }
 
-/* line 304, style.scss */
+/* line 327, style.scss */
 .cont-up {
   margin-top: 80px; }
 
-/* line 310, style.scss */
+/* line 333, style.scss */
 section#wrapper.cont-up {
   margin-top: 80px; }
 
-/* line 314, style.scss */
+/* line 337, style.scss */
 section#wrapper {
   margin-top: 40px; }
 
-/* line 322, style.scss */
+/* line 345, style.scss */
 #wrapper figure {
   position: relative;
   display: inline; }
-/* line 325, style.scss */
+/* line 348, style.scss */
 #wrapper figure img {
   width: 33%;
   height: 33%; }
-/* line 329, style.scss */
+/* line 352, style.scss */
 #wrapper figure:nth-child(2n+1) figcaption {
   bottom: 42px;
   left: 0;
   margin-bottom: 40px;
   padding: 0; }
-/* line 335, style.scss */
+/* line 358, style.scss */
 #wrapper figure:nth-child(2n) figcaption {
   top: 0;
   right: 0; }
 
-/* line 342, style.scss */
+/* line 365, style.scss */
 #wrapper figcaption {
   position: absolute;
   max-height: 420px;
@@ -455,7 +477,7 @@ section#wrapper {
   padding: 0px 0px;
   width: 25%;
   margin: 40px; }
-/* line 351, style.scss */
+/* line 374, style.scss */
 #wrapper figcaption > h3 {
   border: none;
   padding: 10px;
@@ -463,15 +485,15 @@ section#wrapper {
   text-transform: none;
   font-family: Open, Montserrat, Helvetica, Arial, "sans-serif";
   font-size: 14px; }
-/* line 359, style.scss */
+/* line 382, style.scss */
 #wrapper figcaption p {
   padding: 10px; }
 
-/* line 365, style.scss */
+/* line 388, style.scss */
 footer {
   background: #484548 url(../img/stripe.png);
   text-align: center; }
-/* line 370, style.scss */
+/* line 393, style.scss */
 footer a:hover {
   -webkit-text-shadow: 0px 0px 8px #111;
   -moz-text-shadow: 0px 0px 8px #111;
@@ -481,12 +503,12 @@ footer a:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-/* line 381, style.scss */
+/* line 404, style.scss */
 footer > div.contain > div {
   width: 530px;
   display: inline-block;
   padding: 10px; }
-/* line 388, style.scss */
+/* line 411, style.scss */
 footer .menu {
   font: 18px/1.5 Open, Montserrat, Helvetica, Arial, "sans-serif";
   text-transform: uppercase;
@@ -515,22 +537,22 @@ footer .menu li:last-child {
 /* line 50, ../../../../../Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 footer .menu li.last {
   padding-right: 0; }
-/* line 394, style.scss */
+/* line 417, style.scss */
 footer .menu li:first-child {
   width: 80px; }
-/* line 398, style.scss */
+/* line 421, style.scss */
 footer .menu li {
   width: 110px; }
-/* line 400, style.scss */
+/* line 423, style.scss */
 footer .menu li a {
   color: #53c653; }
-/* line 407, style.scss */
+/* line 430, style.scss */
 footer .socio {
   font: 70px/1.5 'Socialico'; }
-/* line 410, style.scss */
+/* line 433, style.scss */
 footer .socio li {
   min-width: 80px; }
-/* line 414, style.scss */
+/* line 437, style.scss */
 footer .socio a {
   display: block;
   color: #bbbbbb;
@@ -544,7 +566,7 @@ footer .socio a {
   -moz-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear; }
-/* line 426, style.scss */
+/* line 449, style.scss */
 footer .socio a:hover {
   color: #2c872c;
   -webkit-text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD;
@@ -552,7 +574,7 @@ footer .socio a:hover {
   -ms-text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD;
   -o-text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD;
   text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD; }
-/* line 437, style.scss */
+/* line 460, style.scss */
 footer .socio ul {
   margin: 0;
   padding: 0;
@@ -579,7 +601,7 @@ footer .socio ul li:last-child {
 /* line 50, ../../../../../Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 footer .socio ul li.last {
   padding-right: 0; }
-/* line 442, style.scss */
+/* line 465, style.scss */
 footer p {
   position: absolute;
   bottom: 20px;

@@ -40,7 +40,11 @@ h1{
 	background-image:url(../img/logoc.png);
 	background-repeat: no-repeat;
 	background-position: 0px 20px;
-	padding-left:120px;
+
+	&>a{
+		display:block;
+		padding-left:120px;
+	}
 }
 
 h1+p{
@@ -158,14 +162,15 @@ section{
 	& h3{
 		border-bottom:1px solid #39AD39;
 		width:500px;
-		margin:20px 0px 30px;
+		margin:0px 0px 30px;
 		text-transform: uppercase;
+		padding-top:0;
 	}
 	& h4{
-		padding:20px 0px 20px 0px;
+		padding:0px 0px 20px 0px;
 		border-bottom:1px solid #39AD39;
 		width:80%;
-		margin:20px 0px 30px;
+		margin:0px 0px 30px;
 		text-transform: uppercase;
 		line-height: 33px;
 		vertical-align: bottom;
@@ -257,31 +262,49 @@ section#present{
 	
 	background: #484548 url(../img/stripe.png);
 	color:#eee;
-	padding-bottom:20px;
+	padding-bottom:40px;
+	padding-top:40px;
 
-	& img{
+	& div.presimg{
 		display:inline-block;
-		padding:5px;
+		opacity:0.8;
+		position:relative;
+		margin:0;
+		padding:0;
+		background-color: #111;
 		border-radius: 25px;
-		width:22%;
-		height:22%;
 		border:5px solid #39AD39;
-		opacity:0.7;
-		filter: url(../img/squairy_light.png);
+		& img{
+			padding:5px;
+			border-radius: 25px;
+			display: block;
+			width: 150px;
+			height: 150px;
+		}
 	}
 	& p{
-		width:34%;
+		width:40%;
 		display: inline-block;
 		line-height: 1.5;
-		margin-right:40px;
+		margin-right:20px;
 		text-align: justify;
 		vertical-align: top;
 		margin-top:20px;
 	}
-	& img+p{
+	& div+p{
 
-		margin-left:40px;
+		margin-left:20px;
 		margin-right: 0;
+	}
+	& div.trame{
+		border-radius: 25px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: url('../img/trame.png');
+		z-index: 10;
 	}
 }
 
