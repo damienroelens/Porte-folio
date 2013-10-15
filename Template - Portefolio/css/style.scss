@@ -495,32 +495,32 @@ section#present{
 }
 // faces
 .cube-face-front {
-  background: yellow;
+  background: #eee;
   -webkit-transform: translate3d(0, 0, $size/2);
   transform: translate3d(0, 0, $size/2);
 }  
 .cube-face-back {
-  background: black;
+  background: #eee;
   -webkit-transform:rotateY(180deg) translate3d(0, 0, $size/2);
   transform: rotateY(180deg) translate3d(0, 0, $size/2);
 } 
 .cube-face-left {
-  background: green;
+  background: #eee;
   -webkit-transform: rotateY(-90deg) translate3d(0, 0, $size/2);
   transform: rotateY(-90deg) translate3d(0, 0, $size/2);
 } 
 .cube-face-right {
-  background: magenta;
+  background: #eee;
   -webkit-transform: rotateY(90deg) translate3d(0, 0, $size/2);
   transform: rotateY(90deg) translate3d(0, 0, $size/2);
 } 
 .cube-face-top {
-  background: blue;
+  background: #eee;
   -webkit-transform: rotateX(90deg) translate3d(0, 0, $size/2);
   transform: rotateX(90deg) translate3d(0, 0, $size/2);
 } 
 .cube-face-bottom {
-  background: red;
+  background: #eee;
   -webkit-transform: rotateX(-90deg) translate3d(0, 0, $size/2);
   transform: rotateX(-90deg) translate3d(0, 0, $size/2);
 }  

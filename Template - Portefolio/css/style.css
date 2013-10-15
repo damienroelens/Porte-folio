@@ -603,37 +603,37 @@ section#present div.trame {
 
 /* line 497, style.scss */
 .cube-face-front {
-  background: yellow;
+  background: #eee;
   -webkit-transform: translate3d(0, 0, 200px);
   transform: translate3d(0, 0, 200px); }
 
 /* line 502, style.scss */
 .cube-face-back {
-  background: black;
+  background: #eee;
   -webkit-transform: rotateY(180deg) translate3d(0, 0, 200px);
   transform: rotateY(180deg) translate3d(0, 0, 200px); }
 
 /* line 507, style.scss */
 .cube-face-left {
-  background: green;
+  background: #eee;
   -webkit-transform: rotateY(-90deg) translate3d(0, 0, 200px);
   transform: rotateY(-90deg) translate3d(0, 0, 200px); }
 
 /* line 512, style.scss */
 .cube-face-right {
-  background: magenta;
+  background: #eee;
   -webkit-transform: rotateY(90deg) translate3d(0, 0, 200px);
   transform: rotateY(90deg) translate3d(0, 0, 200px); }
 
 /* line 517, style.scss */
 .cube-face-top {
-  background: blue;
+  background: #eee;
   -webkit-transform: rotateX(90deg) translate3d(0, 0, 200px);
   transform: rotateX(90deg) translate3d(0, 0, 200px); }
 
 /* line 522, style.scss */
 .cube-face-bottom {
-  background: red;
+  background: #eee;
   -webkit-transform: rotateX(-90deg) translate3d(0, 0, 200px);
   transform: rotateX(-90deg) translate3d(0, 0, 200px); }
 
