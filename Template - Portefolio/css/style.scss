@@ -374,7 +374,7 @@ section#present{
 .contac{
 	margin-top:40px;
 	& .info, & form{
-		width:44%;
+		width:43%;
 		display:inline-block;
 		background-color: #eee;
 		border-radius:5px;
@@ -383,10 +383,10 @@ section#present{
 
 	& .info{
 		& ul li span{
-			padding-left:25px;
+			padding-left:30px;
 		}
 		& li{
-			line-height: 2;
+			line-height: 3;
 		}
 		& div.presimg{
 		display:inline-block;
@@ -432,7 +432,7 @@ section#present{
 				line-height:2;
 			}
 			& input, & textarea{
-				width:70%;
+				width:68%;
 			}
 			& label{
 				width: 20%;
@@ -446,6 +446,7 @@ section#present{
 			}
 			& input[type=button]:hover{
 				background-color: darken(#39AD39,20%);
+				cursor:pointer;
 			}
 			textarea{
 				margin-left:8px;
@@ -460,7 +461,6 @@ section#present{
 
 .propos{
 	margin-top:40px;
-
 }
 
 .scene {
@@ -550,13 +550,30 @@ section#present{
 	min-height:$size;
 
 	& label{
-		display:inline-block;
-		width:90%;
+		display:block;
+		width:40%;
 		line-height: 3;
+		margin:0 0 10px;
+		color:#39AD39;
+		font-family: $fontStackNav;
 	}
 	& input{
-		display:inline-block;
+		float:left;
+		position:relative;
+		top:14px;
 		width:5%;
+	}
+	& label:hover,& input:focus +label{
+		background: rgba(50,50,50,0.5);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px; 
+		color:lighten(#39AD39,10%);
+		  -webkit-text-shadow: 0px 0px 2px #111;
+		 -moz-text-shadow: 0px 0px 2px #111;
+		 -ms-text-shadow: 0px 0px 2px #111;
+		 -o-text-shadow: 0px 0px 2px #111;
+		 text-shadow: 0px 0px 2px #111; 
 	}
 }
 
