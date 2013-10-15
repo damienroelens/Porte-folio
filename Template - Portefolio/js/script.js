@@ -35,9 +35,17 @@
 	var nav = $('.nav-container');
 	      if ($('#wrapper').length) { // implies *not* zero
 			    var cont = $('#wrapper');
-			  } else {
-			    var cont = $('.worked');
-			  };
+			 	 } else {
+
+				  	if ($('.worked').length){
+				    	var cont = $('.worked');
+				    } else {
+				    	if ($('.propos').length){
+				    	var cont = $('.propos');
+				    } else {
+				    	var cont = $('.contac');
+				    }
+			  }};
 
 
 	    

@@ -206,7 +206,10 @@ section#catwork{
 			@include transition(compact(all 0.2s linear));
 			height: 20px;
 			overflow:hidden;
+			text-align: center;
 			&>p{
+
+				text-align: left;
 				color:#EEE;
 				width:180px;
 				margin-top:20px;
@@ -256,8 +259,23 @@ aside{
 			 text-shadow: 0px 0px 2px #111; 
 		}
 	}
-
-
+#description{
+	& img{
+		float:right;
+		width:200px;
+		height: 200px;
+		margin-left:20px;
+	}
+	& div.contain{
+		min-height: 284px;
+	}
+}
+section.blacky{
+	background: #484548 url(../img/stripe.png);
+	color:#eee;
+	padding-bottom:40px;
+	padding-top:40px;
+}
 section#present{
 	
 	background: #484548 url(../img/stripe.png);
@@ -314,9 +332,30 @@ section#present{
 		margin:20px;
 		float:left;
 	}
-	.contain:after{
-		content:"";
-		clear:both;
+	& ul{
+		height:200px;
+		margin-left:400px;
+	}
+	
+	& ul>li:last-child a{
+		background-color: #111;
+		border-radius: 10px;
+		padding:8px;
+		padding-top:3px;
+		padding-bottom:5px;
+	}
+
+	& ul li{
+		font-size:20px;
+		line-height: 3;
+		
+		& span.icons-sprite{
+			padding-left: 25px;
+		}
+		& a{
+			font-family: $fontStackNav;
+			font-size:16px;
+		}
 	}
 }
 
@@ -328,7 +367,91 @@ section#present{
  	margin-top: 80px;
  }
 
+.contac.cont-up{
+	margin-top: 80px;
+}
+.contac{
+	margin-top:40px;
 
+	& .info, & form{
+		width:40%;
+		display:inline-block;
+		background-color: #eee;
+		border-radius:5px;
+	}
+
+	& .info{
+		& ul li span{
+			padding-left:25px;
+		}
+		& li{
+			line-height: 2;
+		}
+		& div.presimg{
+		display:inline-block;
+		opacity:0.8;
+		position:relative;
+		margin:0 0 20px;
+		padding:0;
+		background-color: #111;
+		border-radius: 25px;
+		border:5px solid #39AD39;
+		}
+		& img{
+			padding:5px;
+			border-radius: 25px;
+			display: block;
+			width: 200px;
+			height: 200px;
+		}
+		& div.trame{
+		border-radius: 25px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: url('../img/trame.png');
+		z-index: 10;
+		}
+	}
+
+	& form{
+		vertical-align: top;
+		margin-left:15%;
+		& fieldset{
+			border:1px solid #ddd;
+			padding:20px;
+			& legend{
+				margin-left:20px;
+			}
+			& input, label{
+				display:inline-block;
+				margin:2%;
+				line-height:2;
+			}
+			& input, & textarea{
+				width:70%;
+			}
+			& label{
+				width: 20%;
+				vertical-align: top;
+			}
+			& input[type=button]{
+				width:96%;
+				background-color: #39ad39;
+				color:#eee;
+				height:40px;
+			}
+			& input[type=button]:hover{
+				background-color: darken(#39AD39,20%);
+			}
+			textarea{
+				margin-left:8px;
+			}
+		}
+	}
+}
 
 section#wrapper.cont-up{
  	margin-top: 80px;
