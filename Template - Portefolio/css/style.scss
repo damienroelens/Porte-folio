@@ -5,17 +5,19 @@ $size: 400px;
 @import "icons/*.png";
 @include all-icons-sprites;
 
-
 @font-face {font-family: 'Lane';src: url('./webfonts/LANENAR_.ttf') format('truetype');}
-@font-face {font-family: 'Montserrat';src: url('./webfonts/Montserrat-Regular.ttf') format('truetype');}
-@font-face {font-family: 'Open';src: url('./webfonts/OpenSans-Bold.ttf') format('truetype');}
+@font-face {font-family: 'Open';src: url('./webfonts/OpenSans-Bold.ttf') format('truetype'); font-weight:bold;}
 @font-face {font-family: 'Open sans';src: url('./webfonts/OpenSans-Regular.ttf') format('truetype');}
 @font-face {font-family: 'Socialico';src: url('./webfonts/Socialico.ttf') format('truetype');}
 
+@font-face {
+  font-family: 'Lane';src: url("./webfonts/LANENAR_.eot");
+  font-family: 'Socialico';src: url("./webfonts/Socialico.eot");
+}
 
 $fontStackTitle: Lane ,'sans-serif';
 $fontStackText: Open sans,  Helvetica, Arial, 'sans-serif';
-$fontStackNav: Open, Montserrat, Helvetica, Arial, 'sans-serif';
+$fontStackNav: Open, Helvetica, Arial, 'sans-serif';
 $fontStackP: Verdana,Helvetica,Arial,'sans-serif';
 
 
@@ -50,6 +52,7 @@ h1{
 
 h1+p{
 	font:18px/1.5 $fontStackNav;
+	font-weight: bold;
 	color:#eee;
 	padding:40px;
 	padding-right:0;
@@ -82,6 +85,7 @@ p{
 nav{
 	background: #484548 url(../img/stripe.png);
 	font: 16px/1.5 $fontStackNav ;
+	font-weight: bold;
 
 	&>ul{
 		@include horizontal-list();
@@ -197,6 +201,7 @@ section#catwork{
 
 		& figcaption{
 			font-family: $fontStackNav;
+			font-weight: bold;
 			color:lighten(#39AD39,10%);
 			border-radius: 20px;
 			position:absolute;
@@ -209,7 +214,7 @@ section#catwork{
 			overflow:hidden;
 			text-align: center;
 			&>p{
-
+				font-weight:normal;
 				text-align: left;
 				color:#EEE;
 				width:180px;
@@ -240,6 +245,7 @@ aside{
 			margin:10px 0px;
 			width:80%;
 			font-family: $fontStackNav ;
+			font-weight: bold;
 		}
 		& a{
 			padding:10px 10px;
@@ -355,6 +361,7 @@ section#present{
 		}
 		& a{
 			font-family: $fontStackNav;
+			font-weight: bold;
 			font-size:16px;
 		}
 	}
@@ -397,11 +404,11 @@ section#present{
 		background-color: #111;
 		border-radius: 25px;
 		border:5px solid #39AD39;
+		float:right;
 		}
 		& img{
 			padding:5px;
 			border-radius: 25px;
-			display: block;
 			width: 200px;
 			height: 200px;
 		}
@@ -556,6 +563,7 @@ section#present{
 		margin:0 0 10px;
 		color:#39AD39;
 		font-family: $fontStackNav;
+		font-weight: bold;
 	}
 	& input{
 		float:left;
@@ -624,6 +632,7 @@ section#wrapper{
 		margin:0;
 		text-transform: none;
 		font-family: $fontStackNav;
+		font-weight: bold;
 		font-size: 14px;
 	}
 	& p{
@@ -636,6 +645,7 @@ section#wrapper{
 
 	background: #484548 url(../img/stripe.png);
 	text-align: center;
+	min-height: 146px;
 
 	& a:hover{
 			-webkit-text-shadow: 0px 0px 8px #111;
@@ -657,6 +667,7 @@ section#wrapper{
 	
 	& .menu{
 		font: 18px/1.5 $fontStackNav;
+		font-weight: bold;
 		text-transform: uppercase;
 		height:60px;
 		@include horizontal-list();
@@ -676,7 +687,6 @@ section#wrapper{
 
 	& .socio{
 		font:70px/1.5 'Socialico';
-
 		& li{
 				min-width:80px;
 		}
@@ -711,7 +721,7 @@ section#wrapper{
 	}
 	& p{
 		position:absolute;
-		bottom:20px;
+		bottom:0px;
 		right:480px;
 		color:darken(#EEE,20%);
 		font: 14px/1.5 Open sans, Open sans ms, Helvetica, Arial,'sans-serif';
