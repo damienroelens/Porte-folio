@@ -373,12 +373,12 @@ section#present{
 }
 .contac{
 	margin-top:40px;
-
 	& .info, & form{
-		width:40%;
+		width:44%;
 		display:inline-block;
 		background-color: #eee;
 		border-radius:5px;
+		padding:20px;
 	}
 
 	& .info{
@@ -419,7 +419,7 @@ section#present{
 
 	& form{
 		vertical-align: top;
-		margin-left:15%;
+		margin-left:5%;
 		& fieldset{
 			border:1px solid #ddd;
 			padding:20px;

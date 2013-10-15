@@ -485,12 +485,13 @@ section#present div.trame {
 /* line 374, style.scss */
 .contac {
   margin-top: 40px; }
-/* line 377, style.scss */
+/* line 376, style.scss */
 .contac .info, .contac form {
-  width: 40%;
+  width: 44%;
   display: inline-block;
   background-color: #eee;
-  border-radius: 5px; }
+  border-radius: 5px;
+  padding: 20px; }
 /* line 385, style.scss */
 .contac .info ul li span {
   padding-left: 25px; }
@@ -527,7 +528,7 @@ section#present div.trame {
 /* line 420, style.scss */
 .contac form {
   vertical-align: top;
-  margin-left: 15%; }
+  margin-left: 5%; }
 /* line 423, style.scss */
 .contac form fieldset {
   border: 1px solid #ddd;
