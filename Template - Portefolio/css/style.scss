@@ -389,11 +389,26 @@ section#present{
 	}
 
 	& .info{
-		& ul li span{
+		& span.icons-sprite, & a.icons-sprite,& .postal-code,& .country-name{
+			padding-left:30px;
+			line-height:3;
+		}
+		& .postal-code,& .country-name{
+			line-height:2;
+		}
+		& .country-name{
+			display:block;
+			line-height:1.5;
+		}
+		& div.icons-sprite{
+			padding:2px 0 4px;
 			padding-left:30px;
 		}
-		& li{
-			line-height: 3;
+		& div.vcard>div:last-child{
+			margin-top:10px;
+		}
+		& div.vcard .fn {
+			line-height: 1.5;
 		}
 		& div.presimg{
 		display:inline-block;
@@ -492,6 +507,7 @@ section#present{
   transform-style: preserve-3d;
   transition: transform 0.6s linear;
   -webkit-transition: -webkit-transform 0.6s linear;
+
 }
 .cube-face {
   width: inherit;
@@ -504,52 +520,63 @@ section#present{
 .cube-face-front {
   background: #eee;
   -webkit-transform: translate3d(0, 0, $size/2);
+  -ms-transform: translate3d(0, 0, $size/2);
   transform: translate3d(0, 0, $size/2);
 }  
 .cube-face-back {
   background: #eee;
   -webkit-transform:rotateY(180deg) translate3d(0, 0, $size/2);
+  -ms-transform: rotateY(180deg) translate3d(0, 0, $size/2);
   transform: rotateY(180deg) translate3d(0, 0, $size/2);
 } 
 .cube-face-left {
   background: #eee;
   -webkit-transform: rotateY(-90deg) translate3d(0, 0, $size/2);
+  -ms-transform: rotateY(-90deg) translate3d(0, 0, $size/2);
   transform: rotateY(-90deg) translate3d(0, 0, $size/2);
 } 
 .cube-face-right {
   background: #eee;
   -webkit-transform: rotateY(90deg) translate3d(0, 0, $size/2);
+  -ms-transform: rotateY(90deg) translate3d(0, 0, $size/2);
   transform: rotateY(90deg) translate3d(0, 0, $size/2);
 } 
 .cube-face-top {
   background: #eee;
   -webkit-transform: rotateX(90deg) translate3d(0, 0, $size/2);
+  -ms-transform: rotateX(90deg) translate3d(0, 0, $size/2);
   transform: rotateX(90deg) translate3d(0, 0, $size/2);
 } 
 .cube-face-bottom {
   background: #eee;
   -webkit-transform: rotateX(-90deg) translate3d(0, 0, $size/2);
+  -ms-transform: rotateX(-90deg) translate3d(0, 0, $size/2);
   transform: rotateX(-90deg) translate3d(0, 0, $size/2);
 }  
 // controls 
 #radio-back:checked ~ .scene .cube {
   -webkit-transform: rotateY(180deg); 
+  -ms-transform: rotateY(180deg); 
   transform: rotateY(180deg); 
 } 
 #radio-left:checked ~ .scene .cube {
   -webkit-transform: rotateY(90deg); 
+  -ms-transform: rotateY(90deg); 
   transform: rotateY(90deg); 
 } 
 #radio-right:checked ~ .scene .cube {
   -webkit-transform: rotateY(-90deg); 
+  -ms-transform: rotateY(-90deg); 
   transform: rotateY(-90deg); 
 }
 #radio-top:checked ~ .scene .cube {
   -webkit-transform: rotateX(-90deg); 
+  -ms-transform: rotateX(-90deg); 
   transform: rotateX(-90deg); 
 }  
 #radio-bottom:checked ~ .scene .cube {
   -webkit-transform: rotateX(90deg); 
+  -ms-transform: rotateX(90deg); 
   transform: rotateX(90deg); 
 }
 

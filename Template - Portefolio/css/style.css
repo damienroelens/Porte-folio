@@ -502,12 +502,27 @@ section#present div.trame {
   border-radius: 5px;
   padding: 20px; }
 /* line 392, style.scss */
-.contac .info ul li span {
-  padding-left: 30px; }
-/* line 395, style.scss */
-.contac .info li {
+.contac .info span.icons-sprite, .contac .info span.icons-code, .contac .info span.icons-home, .contac .info span.icons-mail2, .contac .info span.icons-mobile, .contac .info span.icons-pencil, .contac .info span.icons-profile, .contac .info span.icons-wordpress, .contac .info a.icons-sprite, .contac .info a.icons-code, .contac .info a.icons-home, .contac .info a.icons-mail2, .contac .info a.icons-mobile, .contac .info a.icons-pencil, .contac .info a.icons-profile, .contac .info a.icons-wordpress, .contac .info .postal-code, .contac .info .country-name {
+  padding-left: 30px;
   line-height: 3; }
-/* line 398, style.scss */
+/* line 396, style.scss */
+.contac .info .postal-code, .contac .info .country-name {
+  line-height: 2; }
+/* line 399, style.scss */
+.contac .info .country-name {
+  display: block;
+  line-height: 1.5; }
+/* line 403, style.scss */
+.contac .info div.icons-sprite, .contac .info div.icons-code, .contac .info div.icons-home, .contac .info div.icons-mail2, .contac .info div.icons-mobile, .contac .info div.icons-pencil, .contac .info div.icons-profile, .contac .info div.icons-wordpress {
+  padding: 2px 0 4px;
+  padding-left: 30px; }
+/* line 407, style.scss */
+.contac .info div.vcard > div:last-child {
+  margin-top: 10px; }
+/* line 410, style.scss */
+.contac .info div.vcard .fn {
+  line-height: 1.5; }
+/* line 413, style.scss */
 .contac .info div.presimg {
   display: inline-block;
   opacity: 0.8;
@@ -518,13 +533,13 @@ section#present div.trame {
   border-radius: 25px;
   border: 5px solid #39AD39;
   float: right; }
-/* line 409, style.scss */
+/* line 424, style.scss */
 .contac .info img {
   padding: 5px;
   border-radius: 25px;
   width: 200px;
   height: 200px; }
-/* line 415, style.scss */
+/* line 430, style.scss */
 .contac .info div.trame {
   border-radius: 25px;
   position: absolute;
@@ -534,52 +549,52 @@ section#present div.trame {
   width: 100%;
   background: url("../img/trame.png");
   z-index: 10; }
-/* line 427, style.scss */
+/* line 442, style.scss */
 .contac form {
   vertical-align: top;
   margin-left: 5%; }
-/* line 430, style.scss */
+/* line 445, style.scss */
 .contac form fieldset {
   border: 1px solid #ddd;
   padding: 20px; }
-/* line 433, style.scss */
+/* line 448, style.scss */
 .contac form fieldset legend {
   margin-left: 20px; }
-/* line 436, style.scss */
+/* line 451, style.scss */
 .contac form fieldset input, .contac form fieldset label {
   display: inline-block;
   margin: 2%;
   line-height: 2; }
-/* line 441, style.scss */
+/* line 456, style.scss */
 .contac form fieldset input, .contac form fieldset textarea {
   width: 68%; }
-/* line 444, style.scss */
+/* line 459, style.scss */
 .contac form fieldset label {
   width: 20%;
   vertical-align: top; }
-/* line 448, style.scss */
+/* line 463, style.scss */
 .contac form fieldset input[type=button] {
   width: 96%;
   background-color: #39ad39;
   color: #eee;
   height: 40px; }
-/* line 454, style.scss */
+/* line 469, style.scss */
 .contac form fieldset input[type=button]:hover {
   background-color: #206020;
   cursor: pointer; }
-/* line 458, style.scss */
+/* line 473, style.scss */
 .contac form fieldset textarea {
   margin-left: 8px; }
 
-/* line 465, style.scss */
+/* line 480, style.scss */
 .propos.cont-up {
   margin-top: 80px; }
 
-/* line 469, style.scss */
+/* line 484, style.scss */
 .propos {
   margin-top: 40px; }
 
-/* line 473, style.scss */
+/* line 488, style.scss */
 .scene {
   margin-top: 50px;
   width: 400px;
@@ -589,12 +604,12 @@ section#present div.trame {
   position: absolute;
   top: 0;
   right: 100px; }
-/* line 482, style.scss */
+/* line 497, style.scss */
 .scene h4 {
   padding: 20px;
   border: none; }
 
-/* line 487, style.scss */
+/* line 502, style.scss */
 .cube {
   position: absolute;
   width: inherit;
@@ -604,7 +619,7 @@ section#present div.trame {
   transition: transform 0.6s linear;
   -webkit-transition: -webkit-transform 0.6s linear; }
 
-/* line 496, style.scss */
+/* line 512, style.scss */
 .cube-face {
   width: inherit;
   height: inherit;
@@ -612,71 +627,82 @@ section#present div.trame {
   background: red;
   opacity: 0.8; }
 
-/* line 504, style.scss */
+/* line 520, style.scss */
 .cube-face-front {
   background: #eee;
   -webkit-transform: translate3d(0, 0, 200px);
+  -ms-transform: translate3d(0, 0, 200px);
   transform: translate3d(0, 0, 200px); }
 
-/* line 509, style.scss */
+/* line 526, style.scss */
 .cube-face-back {
   background: #eee;
   -webkit-transform: rotateY(180deg) translate3d(0, 0, 200px);
+  -ms-transform: rotateY(180deg) translate3d(0, 0, 200px);
   transform: rotateY(180deg) translate3d(0, 0, 200px); }
 
-/* line 514, style.scss */
+/* line 532, style.scss */
 .cube-face-left {
   background: #eee;
   -webkit-transform: rotateY(-90deg) translate3d(0, 0, 200px);
+  -ms-transform: rotateY(-90deg) translate3d(0, 0, 200px);
   transform: rotateY(-90deg) translate3d(0, 0, 200px); }
 
-/* line 519, style.scss */
+/* line 538, style.scss */
 .cube-face-right {
   background: #eee;
   -webkit-transform: rotateY(90deg) translate3d(0, 0, 200px);
+  -ms-transform: rotateY(90deg) translate3d(0, 0, 200px);
   transform: rotateY(90deg) translate3d(0, 0, 200px); }
 
-/* line 524, style.scss */
+/* line 544, style.scss */
 .cube-face-top {
   background: #eee;
   -webkit-transform: rotateX(90deg) translate3d(0, 0, 200px);
+  -ms-transform: rotateX(90deg) translate3d(0, 0, 200px);
   transform: rotateX(90deg) translate3d(0, 0, 200px); }
 
-/* line 529, style.scss */
+/* line 550, style.scss */
 .cube-face-bottom {
   background: #eee;
   -webkit-transform: rotateX(-90deg) translate3d(0, 0, 200px);
+  -ms-transform: rotateX(-90deg) translate3d(0, 0, 200px);
   transform: rotateX(-90deg) translate3d(0, 0, 200px); }
 
-/* line 535, style.scss */
+/* line 557, style.scss */
 #radio-back:checked ~ .scene .cube {
   -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-/* line 539, style.scss */
+/* line 562, style.scss */
 #radio-left:checked ~ .scene .cube {
   -webkit-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
   transform: rotateY(90deg); }
 
-/* line 543, style.scss */
+/* line 567, style.scss */
 #radio-right:checked ~ .scene .cube {
   -webkit-transform: rotateY(-90deg);
+  -ms-transform: rotateY(-90deg);
   transform: rotateY(-90deg); }
 
-/* line 547, style.scss */
+/* line 572, style.scss */
 #radio-top:checked ~ .scene .cube {
   -webkit-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
   transform: rotateX(-90deg); }
 
-/* line 551, style.scss */
+/* line 577, style.scss */
 #radio-bottom:checked ~ .scene .cube {
   -webkit-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
   transform: rotateX(90deg); }
 
-/* line 556, style.scss */
+/* line 583, style.scss */
 .comp {
   min-height: 400px; }
-/* line 559, style.scss */
+/* line 586, style.scss */
 .comp label {
   display: block;
   width: 40%;
@@ -685,13 +711,13 @@ section#present div.trame {
   color: #39AD39;
   font-family: Open, Helvetica, Arial, "sans-serif";
   font-weight: bold; }
-/* line 568, style.scss */
+/* line 595, style.scss */
 .comp input {
   float: left;
   position: relative;
   top: 14px;
   width: 5%; }
-/* line 574, style.scss */
+/* line 601, style.scss */
 .comp label:hover, .comp input:focus + label {
   background: rgba(50, 50, 50, 0.5);
   -webkit-border-radius: 5px;
@@ -704,34 +730,34 @@ section#present div.trame {
   -o-text-shadow: 0px 0px 2px #111;
   text-shadow: 0px 0px 2px #111; }
 
-/* line 588, style.scss */
+/* line 615, style.scss */
 section#wrapper.cont-up {
   margin-top: 80px; }
 
-/* line 592, style.scss */
+/* line 619, style.scss */
 section#wrapper {
   margin-top: 40px; }
 
-/* line 600, style.scss */
+/* line 627, style.scss */
 #wrapper figure {
   position: relative;
   display: inline; }
-/* line 603, style.scss */
+/* line 630, style.scss */
 #wrapper figure img {
   width: 33%;
   height: 33%; }
-/* line 607, style.scss */
+/* line 634, style.scss */
 #wrapper figure:nth-child(2n+1) figcaption {
   bottom: 42px;
   left: 0;
   margin-bottom: 40px;
   padding: 0; }
-/* line 613, style.scss */
+/* line 640, style.scss */
 #wrapper figure:nth-child(2n) figcaption {
   top: 0;
   right: 0; }
 
-/* line 620, style.scss */
+/* line 647, style.scss */
 #wrapper figcaption {
   position: absolute;
   max-height: 420px;
@@ -740,7 +766,7 @@ section#wrapper {
   padding: 0px 0px;
   width: 25%;
   margin: 40px; }
-/* line 629, style.scss */
+/* line 656, style.scss */
 #wrapper figcaption > h3 {
   border: none;
   padding: 10px;
@@ -749,16 +775,16 @@ section#wrapper {
   font-family: Open, Helvetica, Arial, "sans-serif";
   font-weight: bold;
   font-size: 14px; }
-/* line 638, style.scss */
+/* line 665, style.scss */
 #wrapper figcaption p {
   padding: 10px; }
 
-/* line 644, style.scss */
+/* line 671, style.scss */
 footer {
   background: #484548 url(../img/stripe.png);
   text-align: center;
   min-height: 146px; }
-/* line 650, style.scss */
+/* line 677, style.scss */
 footer a:hover {
   -webkit-text-shadow: 0px 0px 8px #111;
   -moz-text-shadow: 0px 0px 8px #111;
@@ -768,12 +794,12 @@ footer a:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-/* line 661, style.scss */
+/* line 688, style.scss */
 footer > div.contain > div {
   width: 530px;
   display: inline-block;
   padding: 10px; }
-/* line 668, style.scss */
+/* line 695, style.scss */
 footer .menu {
   font: 18px/1.5 Open, Helvetica, Arial, "sans-serif";
   font-weight: bold;
@@ -803,22 +829,22 @@ footer .menu li:last-child {
 /* line 50, ../../../../../Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 footer .menu li.last {
   padding-right: 0; }
-/* line 675, style.scss */
+/* line 702, style.scss */
 footer .menu li:first-child {
   width: 80px; }
-/* line 679, style.scss */
+/* line 706, style.scss */
 footer .menu li {
   width: 110px; }
-/* line 681, style.scss */
+/* line 708, style.scss */
 footer .menu li a {
   color: #53c653; }
-/* line 688, style.scss */
+/* line 715, style.scss */
 footer .socio {
   font: 70px/1.5 'Socialico'; }
-/* line 690, style.scss */
+/* line 717, style.scss */
 footer .socio li {
   min-width: 80px; }
-/* line 694, style.scss */
+/* line 721, style.scss */
 footer .socio a {
   display: block;
   color: #bbbbbb;
@@ -832,7 +858,7 @@ footer .socio a {
   -moz-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear; }
-/* line 706, style.scss */
+/* line 733, style.scss */
 footer .socio a:hover {
   color: #2c872c;
   -webkit-text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD;
@@ -840,7 +866,7 @@ footer .socio a:hover {
   -ms-text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD;
   -o-text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD;
   text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD; }
-/* line 717, style.scss */
+/* line 744, style.scss */
 footer .socio ul {
   margin: 0;
   padding: 0;
@@ -867,7 +893,7 @@ footer .socio ul li:last-child {
 /* line 50, ../../../../../Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 footer .socio ul li.last {
   padding-right: 0; }
-/* line 722, style.scss */
+/* line 749, style.scss */
 footer p {
   position: absolute;
   bottom: 0px;
