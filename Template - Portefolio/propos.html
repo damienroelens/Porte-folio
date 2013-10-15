@@ -24,31 +24,29 @@
 	</nav>
 	<section class="propos">
 		<div class="contain">
-			<h3>Contact</h3>
-			<div class="complist">
-				<ul>
-					<li><a href="">Formations</a></li>
-					<li><a href="">Competences</a></li>
-					<li><a href="">Expériences</a></li>
-					<li><a href="">Langues</a></li>
-					<li><a href="">Centres d'intérets</a></li>
-				</ul>
+			<h3>A propos</h3>
+			<div class="comp">
+				<input type="radio" checked id="radio-front" name="select-face"/> 
+				<label for="radio-front">Compétences</label>   
+				<input type="radio" id="radio-left" name="select-face"/>
+				<label for="radio-left">Expériences</label>   
+				<input type="radio" id="radio-right" name="select-face"/>
+				<label for="radio-right">Formation</label>   
+				<input type="radio" id="radio-top" name="select-face"/>
+				<label for="radio-top">Langues</label>   
+				<input type="radio" id="radio-bottom" name="select-face"/>
+				<label for="radio-bottom">Centres d'intérêts</label>   
+				<div class="scene">
+				  <div class="cube">
+				      <div class="cube-face  cube-face-front"><h4>Compétences</h4></div>
+				      <div class="cube-face  cube-face-back"><h4>Expériences</h4></div>
+				      <div class="cube-face  cube-face-left"><h4>Formation</h4></div>
+				      <div class="cube-face  cube-face-right"><h4>Langues</h4></div>
+				      <div class="cube-face  cube-face-top"><h4>Centres d'intérêts</h4></div>
+				      <div class="cube-face  cube-face-bottom"></div>
+				   </div>
+				</div>
 			</div>
-			<form action="">
-				<fieldset>
-					<label for="nam">Nom : </label>
-					<input type="text" id="nam">
-					<label for="pnam">Prénom : </label>
-					<input type="text" id="pnam">
-					<label for="mail">E-mail : </label>
-					<input type="email" id="mail">
-					<label for="txta">Message : </label>
-					<textarea name="messa" id="txta" cols="30" rows="10"></textarea>
-					<input type="button" value="Envoyer">
-					<legend>Me contacter</legend>
-				</fieldset>
-			</form>
-		</div>
 	</section>
 	<footer>
 		<div class="contain">
