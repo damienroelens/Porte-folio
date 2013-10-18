@@ -15,7 +15,8 @@
 
 
 	var $figcap = $('#wrapper figcaption').css({
-			marginBottom : '1px'
+			marginBottom : '1px',
+			display: 'block'
 	});
 
 	var trombinext = function () {

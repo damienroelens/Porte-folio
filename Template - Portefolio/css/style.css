@@ -607,9 +607,15 @@ section#present div.trame {
 /* line 497, style.scss */
 .scene h4 {
   padding: 20px;
-  border: none; }
+  border: none;
+  margin-bottom: 0px;
+  text-rendering: geometricPrecision; }
+/* line 503, style.scss */
+.scene p {
+  padding: 20px;
+  text-rendering: geometricPrecision; }
 
-/* line 502, style.scss */
+/* line 509, style.scss */
 .cube {
   position: absolute;
   width: inherit;
@@ -619,7 +625,7 @@ section#present div.trame {
   transition: transform 0.6s linear;
   -webkit-transition: -webkit-transform 0.6s linear; }
 
-/* line 512, style.scss */
+/* line 519, style.scss */
 .cube-face {
   width: inherit;
   height: inherit;
@@ -627,82 +633,82 @@ section#present div.trame {
   background: red;
   opacity: 0.8; }
 
-/* line 520, style.scss */
+/* line 527, style.scss */
 .cube-face-front {
   background: #eee;
   -webkit-transform: translate3d(0, 0, 200px);
   -ms-transform: translate3d(0, 0, 200px);
   transform: translate3d(0, 0, 200px); }
 
-/* line 526, style.scss */
+/* line 533, style.scss */
 .cube-face-back {
   background: #eee;
   -webkit-transform: rotateY(180deg) translate3d(0, 0, 200px);
   -ms-transform: rotateY(180deg) translate3d(0, 0, 200px);
   transform: rotateY(180deg) translate3d(0, 0, 200px); }
 
-/* line 532, style.scss */
+/* line 539, style.scss */
 .cube-face-left {
   background: #eee;
   -webkit-transform: rotateY(-90deg) translate3d(0, 0, 200px);
   -ms-transform: rotateY(-90deg) translate3d(0, 0, 200px);
   transform: rotateY(-90deg) translate3d(0, 0, 200px); }
 
-/* line 538, style.scss */
+/* line 545, style.scss */
 .cube-face-right {
   background: #eee;
   -webkit-transform: rotateY(90deg) translate3d(0, 0, 200px);
   -ms-transform: rotateY(90deg) translate3d(0, 0, 200px);
   transform: rotateY(90deg) translate3d(0, 0, 200px); }
 
-/* line 544, style.scss */
+/* line 551, style.scss */
 .cube-face-top {
   background: #eee;
   -webkit-transform: rotateX(90deg) translate3d(0, 0, 200px);
   -ms-transform: rotateX(90deg) translate3d(0, 0, 200px);
   transform: rotateX(90deg) translate3d(0, 0, 200px); }
 
-/* line 550, style.scss */
+/* line 557, style.scss */
 .cube-face-bottom {
   background: #eee;
   -webkit-transform: rotateX(-90deg) translate3d(0, 0, 200px);
   -ms-transform: rotateX(-90deg) translate3d(0, 0, 200px);
   transform: rotateX(-90deg) translate3d(0, 0, 200px); }
 
-/* line 557, style.scss */
+/* line 564, style.scss */
 #radio-back:checked ~ .scene .cube {
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-/* line 562, style.scss */
+/* line 569, style.scss */
 #radio-left:checked ~ .scene .cube {
   -webkit-transform: rotateY(90deg);
   -ms-transform: rotateY(90deg);
   transform: rotateY(90deg); }
 
-/* line 567, style.scss */
+/* line 574, style.scss */
 #radio-right:checked ~ .scene .cube {
   -webkit-transform: rotateY(-90deg);
   -ms-transform: rotateY(-90deg);
   transform: rotateY(-90deg); }
 
-/* line 572, style.scss */
+/* line 579, style.scss */
 #radio-top:checked ~ .scene .cube {
   -webkit-transform: rotateX(-90deg);
   -ms-transform: rotateX(-90deg);
   transform: rotateX(-90deg); }
 
-/* line 577, style.scss */
+/* line 584, style.scss */
 #radio-bottom:checked ~ .scene .cube {
   -webkit-transform: rotateX(90deg);
   -ms-transform: rotateX(90deg);
   transform: rotateX(90deg); }
 
-/* line 583, style.scss */
+/* line 590, style.scss */
 .comp {
   min-height: 400px; }
-/* line 586, style.scss */
+/* line 593, style.scss */
 .comp label {
   display: block;
   width: 40%;
@@ -711,13 +717,13 @@ section#present div.trame {
   color: #39AD39;
   font-family: Open, Helvetica, Arial, "sans-serif";
   font-weight: bold; }
-/* line 595, style.scss */
+/* line 602, style.scss */
 .comp input {
   float: left;
   position: relative;
   top: 14px;
   width: 5%; }
-/* line 601, style.scss */
+/* line 608, style.scss */
 .comp label:hover, .comp input:focus + label {
   background: rgba(50, 50, 50, 0.5);
   -webkit-border-radius: 5px;
@@ -730,34 +736,37 @@ section#present div.trame {
   -o-text-shadow: 0px 0px 2px #111;
   text-shadow: 0px 0px 2px #111; }
 
-/* line 615, style.scss */
+/* line 622, style.scss */
 section#wrapper.cont-up {
   margin-top: 80px; }
 
-/* line 619, style.scss */
+/* line 626, style.scss */
 section#wrapper {
   margin-top: 40px; }
 
-/* line 627, style.scss */
+/* line 634, style.scss */
 #wrapper figure {
   position: relative;
   display: inline; }
-/* line 630, style.scss */
+/* line 637, style.scss */
 #wrapper figure img {
-  width: 33%;
-  height: 33%; }
-/* line 634, style.scss */
+  width: 32%;
+  height: 32%; }
+/* line 641, style.scss */
+#wrapper figure figcaption {
+  display: none; }
+/* line 644, style.scss */
 #wrapper figure:nth-child(2n+1) figcaption {
   bottom: 42px;
   left: 0;
   margin-bottom: 40px;
   padding: 0; }
-/* line 640, style.scss */
+/* line 650, style.scss */
 #wrapper figure:nth-child(2n) figcaption {
   top: 0;
   right: 0; }
 
-/* line 647, style.scss */
+/* line 657, style.scss */
 #wrapper figcaption {
   position: absolute;
   max-height: 420px;
@@ -766,7 +775,7 @@ section#wrapper {
   padding: 0px 0px;
   width: 25%;
   margin: 40px; }
-/* line 656, style.scss */
+/* line 666, style.scss */
 #wrapper figcaption > h3 {
   border: none;
   padding: 10px;
@@ -775,16 +784,16 @@ section#wrapper {
   font-family: Open, Helvetica, Arial, "sans-serif";
   font-weight: bold;
   font-size: 14px; }
-/* line 665, style.scss */
+/* line 675, style.scss */
 #wrapper figcaption p {
   padding: 10px; }
 
-/* line 671, style.scss */
+/* line 681, style.scss */
 footer {
   background: #484548 url(../img/stripe.png);
   text-align: center;
   min-height: 146px; }
-/* line 677, style.scss */
+/* line 687, style.scss */
 footer a:hover {
   -webkit-text-shadow: 0px 0px 8px #111;
   -moz-text-shadow: 0px 0px 8px #111;
@@ -794,12 +803,12 @@ footer a:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-/* line 688, style.scss */
+/* line 698, style.scss */
 footer > div.contain > div {
   width: 530px;
   display: inline-block;
   padding: 10px; }
-/* line 695, style.scss */
+/* line 705, style.scss */
 footer .menu {
   font: 18px/1.5 Open, Helvetica, Arial, "sans-serif";
   font-weight: bold;
@@ -829,22 +838,22 @@ footer .menu li:last-child {
 /* line 50, ../../../../../Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 footer .menu li.last {
   padding-right: 0; }
-/* line 702, style.scss */
+/* line 712, style.scss */
 footer .menu li:first-child {
   width: 80px; }
-/* line 706, style.scss */
+/* line 716, style.scss */
 footer .menu li {
   width: 110px; }
-/* line 708, style.scss */
+/* line 718, style.scss */
 footer .menu li a {
   color: #53c653; }
-/* line 715, style.scss */
+/* line 725, style.scss */
 footer .socio {
   font: 70px/1.5 'Socialico'; }
-/* line 717, style.scss */
+/* line 727, style.scss */
 footer .socio li {
   min-width: 80px; }
-/* line 721, style.scss */
+/* line 731, style.scss */
 footer .socio a {
   display: block;
   color: #bbbbbb;
@@ -858,7 +867,7 @@ footer .socio a {
   -moz-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear; }
-/* line 733, style.scss */
+/* line 743, style.scss */
 footer .socio a:hover {
   color: #2c872c;
   -webkit-text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD;
@@ -866,7 +875,7 @@ footer .socio a:hover {
   -ms-text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD;
   -o-text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD;
   text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD; }
-/* line 744, style.scss */
+/* line 754, style.scss */
 footer .socio ul {
   margin: 0;
   padding: 0;
@@ -893,7 +902,7 @@ footer .socio ul li:last-child {
 /* line 50, ../../../../../Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 footer .socio ul li.last {
   padding-right: 0; }
-/* line 749, style.scss */
+/* line 759, style.scss */
 footer p {
   position: absolute;
   bottom: 0px;

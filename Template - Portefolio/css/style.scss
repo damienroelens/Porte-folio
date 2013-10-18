@@ -497,6 +497,13 @@ section#present{
 	& h4{
 		padding:20px;
 		border:none;
+		margin-bottom:0px;
+		text-rendering:geometricPrecision;
+	}
+	& p{
+		padding:20px;
+		text-rendering:geometricPrecision;
+
 	}
 }
 .cube {
@@ -628,8 +635,11 @@ section#wrapper{
 	position:relative;
 	display:inline;
 	& img{
-		width:33%;
-		height:33%;
+		width:32%;
+		height:32%;
+	}
+	& figcaption{
+		display:none;
 	}
 	&:nth-child(2n+1) figcaption{
 		bottom:42px;

@@ -1,5 +1,7 @@
 .scene {
   margin-top: 50px;
+  width:600px;
+  height:400px;
   -webkit-perspective: none;
   perspective: none;
   position:absolute;
@@ -12,10 +14,10 @@
   transform-style: none;
   transition: none;
   -webkit-transition: none;
-
 }
 .cube-face{
     opacity: 1;
+    border-radius: 10px;
 }
 .comp .cube-face * div{
   position: relative;
