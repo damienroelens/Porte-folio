@@ -315,7 +315,7 @@
 			"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/index.php",
 			"settings":
 			{
-				"buffer_size": 3793,
+				"buffer_size": 2452,
 				"line_ending": "Windows"
 			}
 		},
@@ -323,7 +323,7 @@
 			"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/header.php",
 			"settings":
 			{
-				"buffer_size": 1070,
+				"buffer_size": 1312,
 				"line_ending": "Windows"
 			}
 		},
@@ -331,7 +331,7 @@
 			"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/scss/style.scss",
 			"settings":
 			{
-				"buffer_size": 15173,
+				"buffer_size": 15151,
 				"line_ending": "Windows"
 			}
 		},
@@ -339,7 +339,7 @@
 			"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/footer.php",
 			"settings":
 			{
-				"buffer_size": 679,
+				"buffer_size": 995,
 				"line_ending": "Windows"
 			}
 		},
@@ -347,7 +347,7 @@
 			"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/page-blog.php",
 			"settings":
 			{
-				"buffer_size": 805,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
@@ -355,7 +355,7 @@
 			"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/page.php",
 			"settings":
 			{
-				"buffer_size": 799,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
@@ -363,7 +363,7 @@
 			"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/sidebar-sidebar-1.php",
 			"settings":
 			{
-				"buffer_size": 72,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
@@ -371,7 +371,7 @@
 			"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/single.php",
 			"settings":
 			{
-				"buffer_size": 766,
+				"buffer_size": 989,
 				"line_ending": "Windows"
 			}
 		},
@@ -379,7 +379,7 @@
 			"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/blog.php",
 			"settings":
 			{
-				"buffer_size": 835,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
@@ -387,7 +387,7 @@
 			"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/comments.php",
 			"settings":
 			{
-				"buffer_size": 199,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
@@ -403,7 +403,7 @@
 			"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/functions.php",
 			"settings":
 			{
-				"buffer_size": 1247,
+				"buffer_size": 5757,
 				"line_ending": "Windows"
 			}
 		},
@@ -411,7 +411,7 @@
 			"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/config.rb",
 			"settings":
 			{
-				"buffer_size": 137,
+				"buffer_size": 143,
 				"line_ending": "Windows"
 			}
 		},
@@ -419,7 +419,7 @@
 			"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/style.css",
 			"settings":
 			{
-				"buffer_size": 29239,
+				"buffer_size": 29234,
 				"line_ending": "Windows"
 			}
 		}
@@ -632,15 +632,15 @@
 					"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/index.php",
 					"settings":
 					{
-						"buffer_size": 3793,
+						"buffer_size": 2452,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3785,
-								3198
+								0,
+								0
 							]
 						],
 						"settings":
@@ -753,7 +753,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1660.0,
+						"translation.y": 1440.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -763,15 +763,15 @@
 					"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/header.php",
 					"settings":
 					{
-						"buffer_size": 1070,
+						"buffer_size": 1312,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								715,
-								715
+								0,
+								0
 							]
 						],
 						"settings":
@@ -880,7 +880,8 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -893,15 +894,15 @@
 					"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/scss/style.scss",
 					"settings":
 					{
-						"buffer_size": 15173,
+						"buffer_size": 15151,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13450,
-								13450
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1024,15 +1025,15 @@
 					"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/footer.php",
 					"settings":
 					{
-						"buffer_size": 679,
+						"buffer_size": 995,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								679,
-								679
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1141,7 +1142,8 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1154,7 +1156,7 @@
 					"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/page-blog.php",
 					"settings":
 					{
-						"buffer_size": 805,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -1181,7 +1183,7 @@
 					"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/page.php",
 					"settings":
 					{
-						"buffer_size": 799,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -1208,7 +1210,7 @@
 					"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/sidebar-sidebar-1.php",
 					"settings":
 					{
-						"buffer_size": 72,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -1234,7 +1236,7 @@
 					"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/single.php",
 					"settings":
 					{
-						"buffer_size": 766,
+						"buffer_size": 989,
 						"regions":
 						{
 						},
@@ -1261,7 +1263,7 @@
 					"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/blog.php",
 					"settings":
 					{
-						"buffer_size": 835,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -1288,7 +1290,7 @@
 					"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/comments.php",
 					"settings":
 					{
-						"buffer_size": 199,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -1340,15 +1342,15 @@
 					"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/functions.php",
 					"settings":
 					{
-						"buffer_size": 1247,
+						"buffer_size": 5757,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1247,
-								1247
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1471,15 +1473,15 @@
 					"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/config.rb",
 					"settings":
 					{
-						"buffer_size": 137,
+						"buffer_size": 143,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								136,
-								136
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1607,15 +1609,15 @@
 					"file": "/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/style.css",
 					"settings":
 					{
-						"buffer_size": 29239,
+						"buffer_size": 29234,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								695,
-								695
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1724,7 +1726,9 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

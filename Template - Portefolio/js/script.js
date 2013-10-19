@@ -4,9 +4,11 @@
 	var iTrombiDelay = 8000,
 		$trombiPhotos;
 
+	var widthEcran = $(window).width();
+
 	var $phtos = $('#wrapper img').css({
-			width : '1200px',
-			height : '500px'
+			width : widthEcran,
+			height : widthEcran*0.4166
 	});
 
 	var $figu = $('#wrapper figure').css({
